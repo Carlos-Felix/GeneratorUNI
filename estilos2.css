@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: white;
+}
+
+#grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 30% 20% 30% 10%;
+      grid-template-columns: 10% 30% 20% 30% 10%;
+  -ms-grid-rows: 350px;
+      grid-template-rows: 350px;
+}
+
+#cursos-seleccionados {
+  margin: 5px;
+  overflow: auto;
+  background: #2f4f4f;
+  font-size: 0.9em;
+  color: white;
+}
+
+#lista-cursos {
+  margin: 5px;
+  overflow: auto;
+  background: #2f4f4f;
+  font-size: 0.9em;
+  color: white;
+}
+
+#panel-cursos-seleccionados {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  background: #202020;
+}
+
+#panel-lista-curso {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  background: #202020;
+}
+
+#cont-btn-Generar-Quitar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+  padding: 3px;
+}
+
+#cont-btn-Agregar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+  padding: 3px;
+}
+
+#btn-Agregar {
+  background: #800000;
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+}
+
+#btn-Quitar {
+  background: #800000;
+  padding: 6px 12px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+  margin: 3px;
+}
+
+#btn-Generar {
+  background: #800000;
+  padding: 6px 12px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+  #grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5% 35% 20% 35% 5%;
+        grid-template-columns: 5% 35% 20% 35% 5%;
+    -ms-grid-rows: 200px;
+        grid-template-rows: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0% 40% 20% 40% 0%;
+        grid-template-columns: 0% 40% 20% 40% 0%;
+    -ms-grid-rows: 200px;
+        grid-template-rows: 200px;
+  }
+}
+
+.cont-opc {
+  background: white;
+  width: 90%;
+  display: block;
+  margin: 0px auto;
+}
+
+#cont-cont-panel-opc {
+  padding: 5px;
+}
+
+#cont-panel-opc {
+  width: 100%;
+  background: white;
+  min-height: 100px;
+  max-height: 250px;
+  background: #202020;
+  height: auto;
+  overflow: auto;
+  padding: 10px;
+}
+
+#cont-btn-crear-horario {
+  text-align: center;
+}
+
+#btn-crear-horario {
+  background: #800000;
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+}
+
+.option {
+  border: 1px solid white;
+  padding: 2px;
+  margin: 2px;
+}
+
+.option:hover {
+  background: #800000;
+}
+
+#grid-cont-panel {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+}
+/*# sourceMappingURL=estilos2.css.map */

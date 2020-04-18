@@ -1,0 +1,94 @@
+
+#grid{
+    display: grid;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    grid-template-rows: 350px;
+}
+
+#cursos-seleccionados{
+    //width: 58%;
+    margin: 5px;
+    overflow: auto;
+    background: $bgColorList;
+    font-size: 0.9em;
+    color: white;
+}
+
+#lista-cursos{
+    margin: 5px;
+    overflow: auto;
+    background: $bgColorList;
+    font-size: 0.9em;
+    color: white;
+}
+
+#panel-cursos-seleccionados{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background: $bgColorContList;
+    
+}
+
+#panel-lista-curso{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: $bgColorContList;
+}
+#cont-btn-Generar-Quitar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 3px;
+}
+
+#cont-btn-Agregar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 3px;
+}
+
+#btn-Agregar{
+    background: $btn-color;
+    padding: 6px 12px;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    //font-size: 16px;
+}
+
+#btn-Quitar{
+    background: $btn-color;
+    padding: 6px 12px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+
+#btn-Generar{
+    background: $btn-color;
+    padding: 6px 12px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1000px){
+    #grid{
+        display: grid;
+        grid-template-columns: 5% 35% 20% 35% 5%;
+        grid-template-rows: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #grid{
+        display: grid;
+        grid-template-columns: 0% 40% 20% 40% 0%;
+        grid-template-rows: 200px;
+    }
+}
