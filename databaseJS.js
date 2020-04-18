@@ -12,13 +12,25 @@ async function lee_json() {
     return database;
 }
 
-function findbyNombre(objJson){
+function findbyNombreInDatabase(objJson){
     //console.log(objJson.Nombre);
     //console.log(database);
     var res
     for(var i in database){
         if(database[i].Nombre == objJson.Nombre){
             return database[i];
+        }
+    }
+    return null;
+}
+
+function findbyNombreInTempDatabase(objJson){
+    //console.log(objJson.Nombre);
+    //console.log(database);
+    var res
+    for(var i in tempDatabase){
+        if(tempDatabase[i].Nombre == objJson.Nombre){
+            return tempDatabase[i];
         }
     }
     return null;
@@ -51,6 +63,7 @@ agregar = ()=>{
     i = $("#lista-cursos :selected").text();
     var str = '<option>' + i + '</option>'
     $('#cursos-seleccionados').append(str);
+    tempDatabase.push(findbyNombreInDatabase({"Nombre" : i}));
 };
 
 
@@ -68,7 +81,7 @@ getCursos = (Cur_Select)=>{
     var arrayCursos = [];
     for(var c in Cur_Select){
 
-        arrayCursos.push(findbyNombre({"Nombre" : Cur_Select[c]}));
+        arrayCursos.push(findbyNombreInTempDatabase({"Nombre" : Cur_Select[c]}));
     }
     return arrayCursos;
 }
@@ -95,14 +108,43 @@ $("#btn-Generar").click(()=>{
         //if(i == 0) 
         Cur_Select.push(o.text);
     });
-    console.log("ontension de kursos");
     Opciones = GeneradorHorarios(getCursos(Cur_Select));
+    Opciones.sort(function(a,b){
+        if(a[1][1] > b[1][1]){
+            return 1;
+        }else if(a[1][1] < b[1][1]){
+            return -1;
+        }else{
+            if(a[1][0] > b[1][0]){
+                return 1
+            }else if(a[1][0] < b[1][0]) {
+                return -1;
+            }   
+        }
+        
+    })
     sendOpc();
+    console.log(tempDatabase);
 });
+
+$("#btn-crear-horario").click(()=>{
+    
+    var opc = document.getElementsByName('opciones');
+    var length = opc.length;
+    var selected = 0;
+    for(var i = 0;i < length; i++){
+         if (opc[i].checked) {
+             selected = opc[i].value
+    }}
+ 
+    localStorage.setItem("info",JSON.stringify(Opciones[selected][2]));
+    window.open('/horario');
+ });
 
 var database;
 var nombres;
 var Opciones;
+var tempDatabase = [];
 
 lee_json().then((data)=>{
     database = data;
@@ -110,6 +152,7 @@ lee_json().then((data)=>{
     //console.log(findbyNombre({"Nombre":"Hol"}));
     console.log("Aqui ans");
     nombres = getNames(database);
+    nombres.sort();
     cargarNombres(nombres)
 
 })

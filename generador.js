@@ -1,4 +1,4 @@
-//var Horario = horario.Horario;
+        //var Horario = horario.Horario;
 var h = new Horario();
 
 function GeneradorHorarios(Cursos){
@@ -100,6 +100,30 @@ function GeneradorHorarios(Cursos){
                                         for(var sec7 in Cursos[6].Secciones){
                                             for(var sec8 in Cursos[7].Secciones){
                                                 arr.push(h.detect([Cursos[0].Secciones[sec1],Cursos[1].Secciones[sec2],Cursos[2].Secciones[sec3],Cursos[3].Secciones[sec4],Cursos[4].Secciones[sec5],Cursos[5].Secciones[sec6],Cursos[6].Secciones[sec7],Cursos[7].Secciones[sec8]],nombres));
+                                            }
+                                            
+                                        }
+                                    }
+                                    
+                                }
+                                
+                            }
+                        }
+
+                    }
+                }
+            }else if(nc == 9){
+                for(var sec1 in Cursos[0].Secciones){
+                    for(var sec2 in Cursos[1].Secciones){
+                        for(var sec3 in Cursos[2].Secciones){
+                            for(var sec4 in Cursos[3].Secciones){
+                                for(var sec5 in Cursos[4].Secciones){
+                                    for(var sec6 in Cursos[5].Secciones){
+                                        for(var sec7 in Cursos[6].Secciones){
+                                            for(var sec8 in Cursos[7].Secciones){
+                                                for(var sec9 in Cursos[8].Secciones){
+                                                    arr.push(h.detect([Cursos[0].Secciones[sec1],Cursos[1].Secciones[sec2],Cursos[2].Secciones[sec3],Cursos[3].Secciones[sec4],Cursos[4].Secciones[sec5],Cursos[5].Secciones[sec6],Cursos[6].Secciones[sec7],Cursos[7].Secciones[sec8],Cursos[8].Secciones[sec9]],nombres));
+                                                }
                                             }
                                             
                                         }
