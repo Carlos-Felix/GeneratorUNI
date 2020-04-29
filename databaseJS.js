@@ -138,7 +138,7 @@ $("#btn-crear-horario").click(()=>{
     }}
  
     localStorage.setItem("info",JSON.stringify(Opciones[selected][2]));
-    window.open('/GeneradorHTML/horario');
+    window.open('./horario');
  });
 
 var database;
