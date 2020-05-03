@@ -1,18 +1,18 @@
 matriz = JSON.parse(localStorage.getItem("info"));
 
-for(var dia in matriz){
+for(let dia in matriz){
     
-    for(var hora in matriz[dia]){
+    for(let hora in matriz[dia]){
         if(matriz[dia][hora].length > 0){
-            for(var curso in matriz[dia][hora]){
-                var temp = '#h'+ hora + '-' + dia;
-                var clase;
+            for(let curso in matriz[dia][hora]){
+                let temp = '#h'+ hora + '-' + dia;
+                let clase;
                 if(matriz[dia][hora][curso][2] == 1){
                     clase = 'teoria'
                 }else if(matriz[dia][hora][curso][2] == 2){
                     clase = 'practica'
                 }
-                var temp2 = '<div class = ' + clase + '>' + matriz[dia][hora][curso][0] + '(' + matriz[dia][hora][curso][1]+')'+'</div>';
+                let temp2 = '<div class = ' + clase + '>' + matriz[dia][hora][curso][0] + ' (' + matriz[dia][hora][curso][1]+')'+'</div>';
                 $(temp).append(temp2);
             }
         }

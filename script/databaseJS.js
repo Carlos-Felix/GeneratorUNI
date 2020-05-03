@@ -1,22 +1,14 @@
 async function lee_json() {
-    var database;
-    await $.getJSON("./database.json", function(datos) {
-        //console.log(datos);
-        //alert(datos);
+    let database;
+    await $.getJSON("./script/database.json", function(datos) {
         database = datos;
-        //console.log("aqui");
-        //console.log(database);
     });
-    //console.log("debe");
-    //console.log(database);
     return database;
 }
 
 function findbyNombreInDatabase(objJson){
-    //console.log(objJson.Nombre);
-    //console.log(database);
-    var res
-    for(var i in database){
+    let res;
+    for(let i in database){
         if(database[i].Nombre == objJson.Nombre){
             return database[i];
         }
@@ -25,10 +17,8 @@ function findbyNombreInDatabase(objJson){
 }
 
 function findbyNombreInTempDatabase(objJson){
-    //console.log(objJson.Nombre);
-    //console.log(database);
-    var res
-    for(var i in tempDatabase){
+    let res
+    for(let i in tempDatabase){
         if(tempDatabase[i].Nombre == objJson.Nombre){
             return tempDatabase[i];
         }
@@ -36,17 +26,17 @@ function findbyNombreInTempDatabase(objJson){
     return null;
 }
 function getNames(database){
-    var res = [];
-    for(var d in database){
+    let res = [];
+    for(let d in database){
         res.push(database[d].Nombre)
     }
     return res;
 }
 
 function cargarNombres(nombres){
-    var first = true;
-    var str;
-    for(var n in nombres){
+    let first = true;
+    let str;
+    for(let n in nombres){
         if(first){
         str = '<option selected = "selected">' + nombres[n] + '</option>';
         first = false;
@@ -61,7 +51,7 @@ function cargarNombres(nombres){
 //Main
 agregar = ()=>{
     i = $("#lista-cursos :selected").text();
-    var str = '<option>' + i + '</option>'
+    let str = '<option>' + i + '</option>'
     $('#cursos-seleccionados').append(str);
     tempDatabase.push(findbyNombreInDatabase({"Nombre" : i}));
 };
@@ -78,8 +68,8 @@ $("#btn-Quitar").click(()=>{
 });
 
 getCursos = (Cur_Select)=>{
-    var arrayCursos = [];
-    for(var c in Cur_Select){
+    let arrayCursos = [];
+    for(let c in Cur_Select){
 
         arrayCursos.push(findbyNombreInTempDatabase({"Nombre" : Cur_Select[c]}));
     }
@@ -88,8 +78,8 @@ getCursos = (Cur_Select)=>{
 
 function sendOpc(){
     $('#cont-panel-opc').empty();
-    var first = true;
-    for(var op in Opciones){
+    let first = true;
+    for(let op in Opciones){
         if(first){
             temp = '<div class = "option"><input type="radio" checked = "checked" name="opciones" value= "' + op + '">' + Opciones[op][0] + '</div>';
             first = false;
@@ -105,70 +95,57 @@ function sendOpc(){
 $("#btn-Generar").click(()=>{
     Cur_Select = [];
     $("#cursos-seleccionados option").each((i,o)=>{
-        //if(i == 0) 
         Cur_Select.push(o.text);
     });
-    Opciones = GeneradorHorarios(getCursos(Cur_Select));
-    Opciones.sort(function(a,b){
-        if(a[1][1] > b[1][1]){
-            return 1;
-        }else if(a[1][1] < b[1][1]){
-            return -1;
-        }else{
-            if(a[1][0] > b[1][0]){
-                return 1
-            }else if(a[1][0] < b[1][0]) {
+    if(Cur_Select.length > 0){
+        Opciones = GeneradorHorarios(getCursos(Cur_Select));
+        Opciones.sort(function(a,b){
+            if(a[1][1] > b[1][1]){
+                return 1;
+            }else if(a[1][1] < b[1][1]){
                 return -1;
-            }   
-        }
-        
-    })
-    sendOpc();
-    console.log(tempDatabase);
+            }else{
+                if(a[1][0] > b[1][0]){
+                    return 1
+                }else if(a[1][0] < b[1][0]) {
+                    return -1;
+                }   
+            }
+            
+        })
+        sendOpc();
+    }
+    
 });
 
 $("#btn-crear-horario").click(()=>{
     
-    var opc = document.getElementsByName('opciones');
-    var length = opc.length;
-    var selected = 0;
-    for(var i = 0;i < length; i++){
-         if (opc[i].checked) {
-             selected = opc[i].value
-    }}
- 
-    localStorage.setItem("info",JSON.stringify(Opciones[selected][2]));
-    window.open('./horario');
+    let opc = document.getElementsByName('opciones');
+    if(opc.length > 0){
+        let length = opc.length;
+        let selected = 0;
+        for(let i = 0;i < length; i++){
+            if (opc[i].checked) {
+                selected = opc[i].value
+        }}
+    
+        localStorage.setItem("info",JSON.stringify(Opciones[selected][2]));
+        window.open('./horario');
+    }  
+    
  });
 
-var database;
-var nombres;
-var Opciones;
-var tempDatabase = [];
+let database;
+let nombres;
+let Opciones;
+let tempDatabase = [];
 
 lee_json().then((data)=>{
     database = data;
-    //console.log("res:");
-    //console.log(findbyNombre({"Nombre":"Hol"}));
-    console.log("Aqui ans");
     nombres = getNames(database);
     nombres.sort();
     cargarNombres(nombres)
 
 })
-
-
-
-
-
-
-
-//console.log("ajaja");
-//console.log(lee_json());
-
-    
-
-
-//console.log(database);
 
 

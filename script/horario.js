@@ -26,8 +26,8 @@ class Horario{
                 this.crucesTeoria  = this.crucesTeoria +1;
             }
             if(hora.Prioridad == 2){
-                var band = 0;
-                for(var c in this.matrizHorario[hora.Dia][hora.Hora]){
+                let band = 0;
+                for(let c in this.matrizHorario[hora.Dia][hora.Hora]){
                     if(this.matrizHorario[hora.Dia][hora.Hora][c][2] == 2){
                         this.crucesPractica = this.crucesPractica +1;
                         band = 1;
@@ -42,8 +42,8 @@ class Horario{
         }
     };
     imprimir(){
-        for(var j in this.matrizHorario){
-            for(var i in this.matrizHorario[j]){
+        for(let j in this.matrizHorario){
+            for(let i in this.matrizHorario[j]){
                 console.log(this.matrizHorario[j][i]);
             }
         }
@@ -53,11 +53,11 @@ class Horario{
         this.matrizHorario = create2DArray();
         this.crucesTeoria = 0;
         this.crucesPractica = 0;
-        var nomSecc = "";
-        var i = 0;
-        for(var seccion in Secciones){
+        let nomSecc = "";
+        let i = 0;
+        for(let seccion in Secciones){
             nomSecc = nomSecc + nombres[i].substring(0,31) + " (" + Secciones[seccion].Seccion + ") | ";
-            for(var hora in Secciones[seccion].Horas){
+            for(let hora in Secciones[seccion].Horas){
                 this.insertarCasillaHora(nombres[i],Secciones[seccion].Seccion,Secciones[seccion].Horas[hora])
             }
             i = i+1;
