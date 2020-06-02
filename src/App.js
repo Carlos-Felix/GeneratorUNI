@@ -1,22 +1,19 @@
 import React from 'react';
 import './App.css';
+//import './components/Horario.css'
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+
 import List from './List';
 
 class App extends React.Component{
   render(){
     return (
-      <div id = "grid">
-          <div></div>   
-          <List />          
-          <div></div>
-          <div></div>
-          <div id = "cont-btn-crear-horario"><button id = "btn-crear-horario">Ver Horario</button></div>
-          <div></div>
-          <div></div>
-          <div></div> 
-      </div>
+      <List></List>
   )
   }
-}
-
+}/*
+<Router>          
+      <Route exact path = "/" component = {List} />
+      <Route exact path = "/horario" component = {Horario} />
+      </Router>*/
 export default App;

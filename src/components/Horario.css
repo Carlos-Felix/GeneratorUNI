@@ -1,0 +1,37 @@
+body{
+    background: #333;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50px auto auto auto auto auto auto;
+    grid-template-rows: minmax(50px,auto);
+    gap: 2px;
+    
+    
+}
+
+.grid>div{
+    background: #202020;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid div:hover{
+    border: 1px solid blue;
+}
+
+.teoria{
+    background: #333;
+    border: 2px solid blue;
+}
+
+.practica{
+    background: #333;
+    border: 2px solid orange;
+}
+.oc{
+    background: #333;
+    border: 2px solid red;
+}
