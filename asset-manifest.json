@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/GeneratorUNI/static/css/main.d93595d9.chunk.css",
+    "main.js": "/GeneratorUNI/static/js/main.90604fed.chunk.js",
+    "main.js.map": "/GeneratorUNI/static/js/main.90604fed.chunk.js.map",
+    "runtime-main.js": "/GeneratorUNI/static/js/runtime-main.7085cb5b.js",
+    "runtime-main.js.map": "/GeneratorUNI/static/js/runtime-main.7085cb5b.js.map",
+    "static/js/2.9b3a6e3a.chunk.js": "/GeneratorUNI/static/js/2.9b3a6e3a.chunk.js",
+    "static/js/2.9b3a6e3a.chunk.js.map": "/GeneratorUNI/static/js/2.9b3a6e3a.chunk.js.map",
+    "index.html": "/GeneratorUNI/index.html",
+    "precache-manifest.babb83c62346229a6d0ecfdf029d074a.js": "/GeneratorUNI/precache-manifest.babb83c62346229a6d0ecfdf029d074a.js",
+    "service-worker.js": "/GeneratorUNI/service-worker.js",
+    "static/css/main.d93595d9.chunk.css.map": "/GeneratorUNI/static/css/main.d93595d9.chunk.css.map",
+    "static/js/2.9b3a6e3a.chunk.js.LICENSE.txt": "/GeneratorUNI/static/js/2.9b3a6e3a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7085cb5b.js",
+    "static/js/2.9b3a6e3a.chunk.js",
+    "static/css/main.d93595d9.chunk.css",
+    "static/js/main.90604fed.chunk.js"
+  ]
+}
