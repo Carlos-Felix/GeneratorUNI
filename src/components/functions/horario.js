@@ -1,13 +1,31 @@
 function create2DArray() {
-    let array = [[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-            ,[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-            ,[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-            ,[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-            ,[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-            ,[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-            ,[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-            ,[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-            ]   
+    let array = [[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ,[[],[],[],[],[],[],[],[]]
+            ]
+              
 	return array; 
 };
 
@@ -19,16 +37,16 @@ class Horario{
     }
     insertarCasillaHora(nombre_curso,seccion,hora){
         
-        if(this.matrizHorario[hora.Dia][hora.Hora].length == 0){
-            this.matrizHorario[hora.Dia][hora.Hora].push([nombre_curso,seccion,hora.Prioridad]);
+        if(this.matrizHorario[hora.Hora][hora.Dia].length == 0){
+            this.matrizHorario[hora.Hora][hora.Dia].push([nombre_curso,seccion,hora.Prioridad]);
         }else{
             if(hora.Prioridad == 1){
                 this.crucesTeoria  = this.crucesTeoria +1;
             }
             if(hora.Prioridad == 2){
                 let band = 0;
-                for(let c in this.matrizHorario[hora.Dia][hora.Hora]){
-                    if(this.matrizHorario[hora.Dia][hora.Hora][c][2] == 2){
+                for(let c in this.matrizHorario[hora.Hora][hora.Dia]){
+                    if(this.matrizHorario[hora.Hora][hora.Dia][c][2] == 2){
                         this.crucesPractica = this.crucesPractica +1;
                         band = 1;
                         break;
@@ -38,7 +56,7 @@ class Horario{
                     this.crucesTeoria = this.crucesTeoria +1;
                 }
             }
-            this.matrizHorario[hora.Dia][hora.Hora].push([nombre_curso,seccion,hora.Prioridad]);
+            this.matrizHorario[hora.Hora][hora.Dia].push([nombre_curso,seccion,hora.Prioridad]);
         }
     };
     imprimir(){

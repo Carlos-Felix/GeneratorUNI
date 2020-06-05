@@ -3597,9 +3597,9 @@
                             {"Dia": 2,"Hora": 8, "Prioridad": 1},
                             {"Dia": 2,"Hora": 9, "Prioridad": 1},
                             {"Dia": 2,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 13, "Prioridad": 2},
                             {"Dia": 1,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 15, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 16, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 15, "Prioridad": 2}
     
                         ]
                 }

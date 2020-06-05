@@ -1,9 +1,48 @@
 import GeneradorHorarios from './generador'
+import dataFC from '../../data/database.json';
+import dataFIM from '../../data/dbFIM.json'
 
-class driverGH{
-    constructor(databaseFaculty){
+class DatabaseDriver{
+    constructor(){
         this.tempDatabase = []
-        this.database = databaseFaculty;
+        this.database = dataFC
+    }
+
+    getAllFacultyNames = (faculty)=>{
+        
+        if(faculty == 'FC'){
+            this.changeDatabase(dataFC);
+            return this.getAllNamesFromDatabase();
+        }
+        if(faculty == 'FIQT'){
+            
+            return []
+        }
+        if(faculty == 'FIA'){
+            
+            return []
+        }
+        if(faculty == 'FIM'){
+            this.changeDatabase(dataFIM);
+            return this.getAllNamesFromDatabase();
+        }
+        return []
+            
+        
+    }
+
+    getAllNamesFromDatabase =()=>{
+        let res = [];
+        for(let d in this.database){
+            res.push(this.database[d].Nombre)
+        }   
+        res.sort();
+        return res;
+    }
+
+    changeDatabase = (NewDatabase)=>{
+        this.tempDatabase = []
+        this.database = NewDatabase;
     }
 
     addToTempDatabase = (nameCurso)=>{
@@ -11,7 +50,6 @@ class driverGH{
     }
 
     findbyNombreInDatabase = (objJson)=>{
-        let res;
         for(let i in this.database){
             if(this.database[i].Nombre == objJson.Nombre){
                 return this.database[i];
@@ -21,7 +59,6 @@ class driverGH{
     }
 
     findbyNombreInTempDatabase = (objJson)=>{
-        //let res
         for(let i in this.tempDatabase){
             if(this.tempDatabase[i].Nombre == objJson.Nombre){
                 return this.tempDatabase[i];
@@ -32,7 +69,6 @@ class driverGH{
 
     getCursos = (arrayNames)=>{
         let arrayCursos = [];
-
         for(let n in arrayNames){
             arrayCursos.push(this.findbyNombreInTempDatabase({"Nombre" : arrayNames[n]}));
         }
@@ -59,4 +95,4 @@ class driverGH{
     }
 }
 
-export default driverGH;
+export default DatabaseDriver;
