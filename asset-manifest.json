@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/GeneratorUNI/static/css/main.d4106e5b.chunk.css",
+    "main.css": "/GeneratorUNI/static/css/main.96fa5dbc.chunk.css",
     "main.js": "/GeneratorUNI/static/js/main.d959cf00.chunk.js",
     "main.js.map": "/GeneratorUNI/static/js/main.d959cf00.chunk.js.map",
     "runtime-main.js": "/GeneratorUNI/static/js/runtime-main.7085cb5b.js",
@@ -8,17 +8,17 @@
     "static/js/2.452674e1.chunk.js": "/GeneratorUNI/static/js/2.452674e1.chunk.js",
     "static/js/2.452674e1.chunk.js.map": "/GeneratorUNI/static/js/2.452674e1.chunk.js.map",
     "index.html": "/GeneratorUNI/index.html",
-    "precache-manifest.977970b6d1799f2e283e710973de5ac1.js": "/GeneratorUNI/precache-manifest.977970b6d1799f2e283e710973de5ac1.js",
+    "precache-manifest.24f997b5e275ebb5fdec08b117c2dbd5.js": "/GeneratorUNI/precache-manifest.24f997b5e275ebb5fdec08b117c2dbd5.js",
     "service-worker.js": "/GeneratorUNI/service-worker.js",
-    "static/css/main.d4106e5b.chunk.css.map": "/GeneratorUNI/static/css/main.d4106e5b.chunk.css.map",
+    "static/css/main.96fa5dbc.chunk.css.map": "/GeneratorUNI/static/css/main.96fa5dbc.chunk.css.map",
     "static/js/2.452674e1.chunk.js.LICENSE.txt": "/GeneratorUNI/static/js/2.452674e1.chunk.js.LICENSE.txt",
     "static/media/four_leaves_logo.png": "/GeneratorUNI/static/media/four_leaves_logo.982254e9.png",
-    "static/media/styles.css": "/GeneratorUNI/static/media/jean_victor_balin_cross.a683b783.svg"
+    "static/media/styles.css": "/GeneratorUNI/static/media/logo-fl-white.144e6770.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7085cb5b.js",
     "static/js/2.452674e1.chunk.js",
-    "static/css/main.d4106e5b.chunk.css",
+    "static/css/main.96fa5dbc.chunk.css",
     "static/js/main.d959cf00.chunk.js"
   ]
 }

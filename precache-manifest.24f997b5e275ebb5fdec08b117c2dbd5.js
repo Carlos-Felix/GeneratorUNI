@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c9699db341dd98b9dc89de3f3f770a7",
+    "revision": "80e807fcc5da2774d4dc1649d7b5dd64",
     "url": "/GeneratorUNI/index.html"
   },
   {
-    "revision": "9702b2af7775b3f7d411",
-    "url": "/GeneratorUNI/static/css/main.d4106e5b.chunk.css"
+    "revision": "7e24ccb5223b7b8172ce",
+    "url": "/GeneratorUNI/static/css/main.96fa5dbc.chunk.css"
   },
   {
     "revision": "364b02bb3c7de56d35c6",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GeneratorUNI/static/js/2.452674e1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9702b2af7775b3f7d411",
+    "revision": "7e24ccb5223b7b8172ce",
     "url": "/GeneratorUNI/static/js/main.d959cf00.chunk.js"
   },
   {
@@ -30,5 +30,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a683b783dd02fc7d338b76341a6ee794",
     "url": "/GeneratorUNI/static/media/jean_victor_balin_cross.a683b783.svg"
+  },
+  {
+    "revision": "144e6770cc1169aa54678c2799ccf99c",
+    "url": "/GeneratorUNI/static/media/logo-fl-white.144e6770.png"
   }
 ]);
