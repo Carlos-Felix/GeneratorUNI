@@ -3,10 +3,8 @@ import './styles.css'
 
 
 const OptionPanel = React.forwardRef((props,ref)=>{
-    const inputEl = useRef(null);
-    
-    /*
-    useEffect(()=>{
+    const inputEl = useRef(null);    
+    /*useEffect(()=>{
         
         if(props.listOpc.length > 0){
             
@@ -14,13 +12,14 @@ const OptionPanel = React.forwardRef((props,ref)=>{
             }
             
         }
-        )*/
+
+    )*/
     return(
         <>
             <div id = "grid-cont-panel">
                 <div id="cont-cont-panel-opc">
                     <div id = "cont-panel-opc">
-                        <div id = "panel-opc" onChange = {props.handleSelectOpcion} ref = {ref}>
+                        <div id = "panel-opc" onChange = {props.handleSelectOpcion} ref = {ref.panelOpc}>
                             { 
                                 
                                 props.listOpc.map((d,index)=>{
@@ -43,7 +42,7 @@ const OptionPanel = React.forwardRef((props,ref)=>{
             </div>
             
             <div id = "cont-btn-crear-horario">
-                    <button id = "btn-crear-horario" onClick = {props.handleVerHorario} ref = {inputEl}>Ver Horario</button>
+                    <button id = "btn-crear-horario" onClick = {props.handleVerHorario} ref = {ref.verHorarioButton} >Ver Horario</button>
             </div>
             
         </>

@@ -49,14 +49,14 @@ const createList = (list)=>{
 
 const ListCursos = React.forwardRef((props,ref)=>{
     return(
-      
-        <Select ref = {ref} 
+      <div className = "cont-menu">
+        <Select //ref = {ref} 
                 styles={customStyles} 
                 options = {createList(props.listOfNames)}
                 onChange = {props.handleInput}
                 >        
         </Select>
-      
+      </div>
     )
 })
 export default ListCursos;

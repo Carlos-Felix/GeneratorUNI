@@ -10,7 +10,7 @@ const SelectionPanel= React.forwardRef((props,ref)=>{
                     props.selectedCursos.map((d,index)=>{
                         return(
                             
-                            <div key = {index} className = "selected-curso-task">
+                            <div key = {d} className = "selected-curso-task">
                             <div  className = "text-curso-task">
                                   {d}
                           </div>

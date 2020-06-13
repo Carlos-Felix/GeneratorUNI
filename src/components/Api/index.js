@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import React from 'react';
-import OptionPanel from '../OptionPanel/OptionPanel'
-import PanelCursos from '../CursosPanel/PanelCursos'
-import SelectionPanel from '../SelectionPanel/SelectionPanel'
-import DatabaseDriver from '../functions/DatabaseDriver'
-import Horario from '../Horario/Horario'
+import OptionPanel from '../OptionPanel'
+import PanelCursos from '../CursosPanel'
+import SelectionPanel from '../SelectionPanel'
+import DatabaseDriver from '../../functions/DatabaseDriver'
+import Horario from '../Horario'
 import './styles.css'
 
 class List extends React.Component{
@@ -22,9 +22,8 @@ class List extends React.Component{
         }
     }
     //REFERENCIAS
-    selectRef = React.createRef();
-    cursosSelectedRef = React.createRef();
     panelOpc = React.createRef();
+    verHorarioButton = React.createRef();
     
     //HANDLERS
     handleChangeFaculty = (event)=>{
@@ -37,56 +36,11 @@ class List extends React.Component{
             opcSelect : 0,
             focusAble : false
         })
-        //console.log(this.state)
     } 
-
-    handleAgregar = ()=>{
-        console.log(this.selectRef.current.state.value.label)
-        
-        const cursoSelected = this.selectRef.current.state.value.label//this.selectRef.current.options[this.selectRef.current.selectedIndex]
-        if(typeof(cursoSelected) != 'undefined'){
-            let nameCurso = cursoSelected;
-            this.DatabaseDriver.addToTempDatabase(nameCurso);
-            this.setState(prevState=>({
-                names : prevState.names,
-                selectedCursos : prevState.selectedCursos.concat(nameCurso),
-                arrayOpc : prevState.arrayOpc,
-                rendeHorario : prevState.rendeHorario,
-                opcSelect : prevState.opcSelect,
-                focusAble : false
-
-            }))
-            
-        }
-       
-    }
-
-    handleQuitar = (e)=>{
-        e.stopPropagation()
-        
-        let sCursoIndex = this.cursosSelectedRef.current.selectedIndex
-        //console.log(sCursoIndex)
-        let selectedCursos = this.state.selectedCursos
-        if( sCursoIndex !== -1){
-            selectedCursos.splice(sCursoIndex,1)
-        }
-
-        this.setState((prevState)=>{
-            return{
-                names : prevState.names,
-                selectedCursos : selectedCursos,
-                arrayOpc : prevState.arrayOpc,
-                rendeHorario : prevState.rendeHorario,
-                opcSelect : prevState.opcSelect,
-                focusAble : false
-            }
-        })
-    }
     
     handleGenerar = ()=>{
         
         let newOpc = this.DatabaseDriver.generar(this.state.selectedCursos)
-        //console.log(newOpc)
         this.setState(prevState=>({
             names : prevState.names,
             selectedCursos : prevState.selectedCursos,
@@ -95,6 +49,9 @@ class List extends React.Component{
             opcSelect : 0,
             focusAble : prevState.focusAble
         }))
+        console.log(this.verHorarioButton)
+        this.verHorarioButton.current.focus()
+
     }
 
     handleVerHorario = ()=>{
@@ -109,8 +66,7 @@ class List extends React.Component{
     }
 
     handleInput = (e)=>{
-        //console.log(e)
-        const cursoSelected = e.label//this.selectRef.current.options[this.selectRef.current.selectedIndex]
+        const cursoSelected = e.label
         if(typeof(cursoSelected) != 'undefined'){
             let nameCurso = cursoSelected;
             this.DatabaseDriver.addToTempDatabase(nameCurso);
@@ -145,26 +101,20 @@ class List extends React.Component{
         
         selectedCursos.splice(index, 1);
         console.log(selectedCursos)
-        this.setState({selectedCursos: selectedCursos})
+        this.setState({selectedCursos: selectedCursos,focusAble: false})
     }
     
     render(){
         return(<>
-            <div id = "grid"> 
-                
-                
+            <div id = "grid">                 
                 <PanelCursos
                     handleChangeFaculty = {this.handleChangeFaculty}
                     names = {this.state.names}
-                    handleAgregar = {this.handleAgregar}
                     handleInput = {this.handleInput}
-                    selectRef = {this.selectRef}
                 />
-                <SelectionPanel
-                    ref = {this.cursosSelectedRef} 
+                <SelectionPanel 
                     selectedCursos = {this.state.selectedCursos} 
                     handleGenerar = {this.handleGenerar} 
-                    handleQuitar = {this.handleQuitar} 
                     triggerDelete = {this.triggerDelete}
                 /> 
 
@@ -172,7 +122,10 @@ class List extends React.Component{
                     listOpc = {this.state.arrayOpc} 
                     handleSelectOpcion = {this.handleSelectOpcion} 
                     handleVerHorario = {this.handleVerHorario}
-                    ref = {this.panelOpc}
+                    ref = {{
+                                verHorarioButton : this.verHorarioButton, 
+                                panelOpc : this.panelOpc
+                    }}
                 />
             </div>
             <Horario 

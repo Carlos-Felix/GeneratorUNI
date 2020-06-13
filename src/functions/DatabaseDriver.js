@@ -1,6 +1,6 @@
 import GeneradorHorarios from './generador'
-import dataFC from '../../data/database.json';
-import dataFIM from '../../data/dbFIM.json'
+import dataFC from '../data/database.json';
+import dataFIM from '../data/dbFIM.json'
 
 class DatabaseDriver{
     constructor(){

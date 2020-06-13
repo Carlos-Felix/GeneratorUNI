@@ -3,7 +3,7 @@ import './App.css';
 //import './components/Horario.css'
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
-import List from './components/Api/List';
+import List from './components/Api';
 
 class App extends React.Component{
   render(){

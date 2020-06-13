@@ -7,7 +7,7 @@ const PanelCursos = (props)=>{
     return(
         <>
             <div id = "panel-lista-curso">
-                <div>
+                <div id = "cont-faculty-list">
                     <select id = "faculty-list" size="1" onChange = {props.handleChangeFaculty}>
                         <option value = 'FC'>Ciencias</option>
                         <option value = 'FIIS'>FIIS</option>
@@ -20,7 +20,7 @@ const PanelCursos = (props)=>{
                 
                 <ListCursos 
                     listOfNames = {props.names} 
-                    ref = {props.selectRef}
+                    //ref = {props.selectRef}
                     handleInput = {props.handleInput}
                 />
             </div>
