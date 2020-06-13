@@ -159,7 +159,7 @@
     height: 200px;*/
     
   }
-
+/*
   @media screen and (max-width: 800px) {
     #grid {
       display: -ms-grid;
@@ -201,6 +201,423 @@
       grid-column: 1/3;
       grid-row: 2/3;
     }
+  }
+
+  (min-width: 1281px) {
+  
+    //CSS
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    #grid {
+      display: -ms-grid;
+      display: grid;
+      height: 100vh;
+      -ms-grid-columns: 0.5fr 3.5fr 1fr 1fr 3.5fr 0.5fr;
+          grid-template-columns: 0.5fr 3.5fr 1fr 1fr 3.5fr 0.5fr;
+      -ms-grid-rows: 92px auto 30% 10%;
+          grid-template-rows: 92px auto 30% 10%;
+    }
+    
+    #cursos-seleccionados {
+      margin: 5px;
+      overflow: auto;
+      background: #2f4f4f;
+      font-size: 0.9em;
+      color: white;
+    }
+    
+    #lista-cursos {
+      margin: 5px;
+      overflow: auto;
+      background: #2f4f4f;
+      font-size: 0.9em;
+      color: white;
+    }
+    
+    #panel-cursos-seleccionados {
+      /*display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 70% 30%;
+          grid-template-columns: 70% 30%;*/
+      background: #202020;
+      grid-column: 2/2;
+      grid-row: 1/3;
+      overflow: auto;
+     
+      grid-column: 5/6;
+      grid-row: 1/3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    
+    }
+    
+    
+    
+    #panel-lista-curso {
+      display: -ms-grid;
+      /*display: grid;
+      -ms-grid-columns: 30% 70%;
+          grid-template-columns: 30% 70%;
+      grid-template-rows: 20px auto;*/
+      background: #202020;
+      padding: 6px;
+      
+      grid-column: 2/3;
+      
+      
+    }
+    
+    #cont-btn-Agregar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 5px;
+      padding: 3px;
+    }
+    
+    #btn-Agregar {
+      background: #800000;
+      padding: 6px 12px;
+      border: 1px solid white;
+      border-radius: 3px;
+      color: white;
+    }
+    
+    #btn-Quitar {
+      background: #800000;
+      padding: 6px 12px;
+      border: 1px solid white;
+      color: white;
+      border-radius: 3px;
+      margin: 3px;
+    }
+    
+    
+    .cont-opc {
+      background: white;
+      width: 90%;
+      display: block;
+      margin: 0px auto;
+    }
+    
+    #cont-cont-panel-opc {
+      padding: 5px;
+      height: 100%;
+      
+    }
+    
+    #cont-panel-opc {
+      width: 100%;
+      background: white;
+      /*min-height: 100px;*/
+      /*max-height: 250px;*/
+      height: 100%;
+      background: #202020;
+      /*height: auto;*/
+      overflow: auto;
+      padding: 10px;
+    }
+    
+    #btn-crear-horario {
+      background: #800000;
+      padding: 6px 12px;
+      border: 1px solid white;
+      border-radius: 3px;
+      color: white;
+    }
+    
+    .option {
+      border: 1px solid white;
+      padding: 2px;
+      margin: 2px;
+    }
+    
+    .option:hover {
+      background: #800000;
+    }
+    
+    #grid-cont-panel {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 6;
+      /*grid-column: 1/3;*/
+      grid-column: 1/7;
+    }
+    /*# sourceMappingURL=estilos2.css.map */
+    #faculty-list{
+      width: 100%;
+      height: 30px;
+      margin: 0px 0px 10px 0px;
+    }
+    
+    #logo{
+      grid-column: 2/3;
+      grid-row: 2/3;
+      /*
+      background-image: url("../../icon/four_leaves_logo.png");
+        background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      /*width: 300px;
+      height: 200px;*/
+      
+    }
+  
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    #grid {
+      display: -ms-grid;
+      display: grid;
+      height: 100vh;
+      -ms-grid-columns: 0.5fr 3.5fr 1fr 1fr 3.5fr 0.5fr;
+          grid-template-columns: 0.5fr 3.5fr 1fr 1fr 3.5fr 0.5fr;
+      -ms-grid-rows: 92px auto 30% 10%;
+          grid-template-rows: 92px auto 30% 10%;
+    }
+    
+    #cursos-seleccionados {
+      margin: 5px;
+      overflow: auto;
+      background: #2f4f4f;
+      font-size: 0.9em;
+      color: white;
+    }
+    
+    #lista-cursos {
+      margin: 5px;
+      overflow: auto;
+      background: #2f4f4f;
+      font-size: 0.9em;
+      color: white;
+    }
+    
+    #panel-cursos-seleccionados {
+      /*display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 70% 30%;
+          grid-template-columns: 70% 30%;*/
+      background: #202020;
+      grid-column: 2/2;
+      grid-row: 1/3;
+      overflow: auto;
+     
+      grid-column: 5/6;
+      grid-row: 1/3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    
+    }
+    
+    
+    
+    #panel-lista-curso {
+      display: -ms-grid;
+      /*display: grid;
+      -ms-grid-columns: 30% 70%;
+          grid-template-columns: 30% 70%;
+      grid-template-rows: 20px auto;*/
+      background: #202020;
+      padding: 6px;
+      
+      grid-column: 2/3;
+      
+      
+    }
+    
+    #cont-btn-Agregar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 5px;
+      padding: 3px;
+    }
+    
+    #btn-Agregar {
+      background: #800000;
+      padding: 6px 12px;
+      border: 1px solid white;
+      border-radius: 3px;
+      color: white;
+    }
+    
+    #btn-Quitar {
+      background: #800000;
+      padding: 6px 12px;
+      border: 1px solid white;
+      color: white;
+      border-radius: 3px;
+      margin: 3px;
+    }
+    
+    
+    .cont-opc {
+      background: white;
+      width: 90%;
+      display: block;
+      margin: 0px auto;
+    }
+    
+    #cont-cont-panel-opc {
+      padding: 5px;
+      height: 100%;
+      
+    }
+    
+    #cont-panel-opc {
+      width: 100%;
+      background: white;
+      /*min-height: 100px;*/
+      /*max-height: 250px;*/
+      height: 100%;
+      background: #202020;
+      /*height: auto;*/
+      overflow: auto;
+      padding: 10px;
+    }
+    
+    #btn-crear-horario {
+      background: #800000;
+      padding: 6px 12px;
+      border: 1px solid white;
+      border-radius: 3px;
+      color: white;
+    }
+    
+    .option {
+      border: 1px solid white;
+      padding: 2px;
+      margin: 2px;
+    }
+    
+    .option:hover {
+      background: #800000;
+    }
+    
+    #grid-cont-panel {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 6;
+      /*grid-column: 1/3;*/
+      grid-column: 1/7;
+    }
+    /*# sourceMappingURL=estilos2.css.map */
+    #faculty-list{
+      width: 100%;
+      height: 30px;
+      margin: 0px 0px 10px 0px;
+    }
+    
+    #logo{
+      grid-column: 2/3;
+      grid-row: 2/3;
+      /*
+      background-image: url("../../icon/four_leaves_logo.png");
+        background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      /*width: 300px;
+      height: 200px;*/
+      
+    }
+  
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    #grid {
+      display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 92px auto 30% 10%;
+        grid-template-rows: 92px auto 30% 10%;
+    }
+    #panel-lista-curso {
+      grid-column: 1/2;
+    }
+    #panel-cursos-seleccionados {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+    #logo{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    #grid {
+      display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 92px auto 30% 10%;
+        grid-template-rows: 92px auto 30% 10%;
+    }
+    #panel-lista-curso {
+      grid-column: 1/3;
+    }
+    #panel-cursos-seleccionados {
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+    
   }
   
     /*# sourceMappingURL=estilos2.css.map */

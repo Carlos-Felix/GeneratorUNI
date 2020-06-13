@@ -4,7 +4,14 @@
     overflow: auto;
     padding: 3px;
     background: #4F2F2F;
-    /*
+    background-image: url("../../icon/logo-fl-white.png");
+      background-repeat: no-repeat;
+    background-size: auto 90%;
+    
+    background-position: center center;
+    /*width: 300px;
+    height: 200px;
+    /*background-attachment: fixed;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 100%;
