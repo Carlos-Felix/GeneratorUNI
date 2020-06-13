@@ -1,12 +1,12 @@
 import React from 'react'
 import ListCursos from './ListCursos'
+import Logo from "../../icon/four_leaves_logo.png";
 
 const PanelCursos = (props)=>{
 
     return(
         <>
             <div id = "panel-lista-curso">
-                <div></div>
                 <div>
                     <select id = "faculty-list" size="1" onChange = {props.handleChangeFaculty}>
                         <option value = 'FC'>Ciencias</option>
@@ -17,17 +17,21 @@ const PanelCursos = (props)=>{
                     </select>
                 </div>
                             
-                <div id = "cont-btn-Agregar">
-                    <button type="button" id = "btn-Agregar" onClick = {props.handleAgregar}>Agregar</button>
-                </div>
+                
                 <ListCursos 
                     listOfNames = {props.names} 
                     ref = {props.selectRef}
+                    handleInput = {props.handleInput}
                 />
             </div>
+            
+            
         </>
 
     )
 }
 
 export default PanelCursos;
+/*<div id = "cont-btn-Agregar"><div id = "logo"><img width = "230px" height = "230px" alt = "fourleaves" src ={Logo}/></div>
+                    <button type="button" id = "btn-Agregar" onClick = {props.handleAgregar}>Agregar</button>
+                </div>*/

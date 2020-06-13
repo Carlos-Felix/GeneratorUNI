@@ -16,19 +16,19 @@ const Horario = React.forwardRef((props,ref)=>{
             }
         }
         )
-    console.log(props.opcionSelect)
+    //console.log(props.opcionSelect)
     
     if(props.render && props.array[props.opcionSelect] != null){
         return(
             <>
             <div className = "grid" tabIndex = "1" ref={inputEl}>
-            <div>Horas</div>
-            <div>Lunes</div>
-            <div>Martes</div>
-            <div>Miercoles</div>
-            <div>Jueves</div>
-            <div>Viernes</div>
-            <div>Sabado</div>
+            <div style = {{fontsize : "0.5em"}}>Horas</div>
+            <div style = {{fontSize : "0.5em"}}>LUNES</div>
+            <div style = {{fontSize : "0.5em"}}>MARTES</div>
+            <div style = {{fontSize : "0.5em"}}>MIERCOLES</div>
+            <div style = {{fontSize : "0.5em"}}>JUEVES</div>
+            <div style={{fontSize : "0.5em"}}>VIERNES</div>
+            <div style={{fontSize : "0.5em"}}>SABADO</div>
             
             {
                 
@@ -38,7 +38,7 @@ const Horario = React.forwardRef((props,ref)=>{
                         
                         return(
                             <>
-                                <div>{indexHora}:00</div>
+                                <div>{indexHora}:00-{indexHora +1}:00</div>
                                 {
                                     arrayDia.map((dia,indexDia)=>{
                                         if(indexDia >= 1 && indexDia<= 6){

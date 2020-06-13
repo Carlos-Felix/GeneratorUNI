@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import React from 'react';
-import OptionPanel from './components/OptionPanel/OptionPanel'
-import PanelCursos from './components/CursosPanel/PanelCursos'
-import SelectionPanel from './components/SelectionPanel/SelectionPanel'
-import DatabaseDriver from './components/functions/DatabaseDriver'
-import Horario from './components/Horario/Horario';
+import OptionPanel from '../OptionPanel/OptionPanel'
+import PanelCursos from '../CursosPanel/PanelCursos'
+import SelectionPanel from '../SelectionPanel/SelectionPanel'
+import DatabaseDriver from '../functions/DatabaseDriver'
+import Horario from '../Horario/Horario'
+import './styles.css'
 
 class List extends React.Component{
     constructor(props){
@@ -36,13 +37,15 @@ class List extends React.Component{
             opcSelect : 0,
             focusAble : false
         })
-        console.log(this.state)
+        //console.log(this.state)
     } 
 
     handleAgregar = ()=>{
-        const cursoSelected = this.selectRef.current.options[this.selectRef.current.selectedIndex]
+        console.log(this.selectRef.current.state.value.label)
+        
+        const cursoSelected = this.selectRef.current.state.value.label//this.selectRef.current.options[this.selectRef.current.selectedIndex]
         if(typeof(cursoSelected) != 'undefined'){
-            let nameCurso = cursoSelected.value;
+            let nameCurso = cursoSelected;
             this.DatabaseDriver.addToTempDatabase(nameCurso);
             this.setState(prevState=>({
                 names : prevState.names,
@@ -53,33 +56,37 @@ class List extends React.Component{
                 focusAble : false
 
             }))
-
+            
         }
        
     }
 
-    handleQuitar = ()=>{
-
-        const cursoSelected = this.cursosSelectedRef.current.options[this.cursosSelectedRef.current.selectedIndex]
-        if(typeof(cursoSelected) != 'undefined'){
-
-            this.setState(prevState=>{
-                const filtered = prevState.selectedCursos.filter(i=>i != cursoSelected.value);
-                return{
-                    names : prevState.names,
-                    selectedCursos : filtered,
-                    arrayOpc : prevState.arrayOpc,
-                    rendeHorario : prevState.rendeHorario,
-                    opcSelect : prevState.opcSelect,
-                    focusAble : false
-                }
-            })
+    handleQuitar = (e)=>{
+        e.stopPropagation()
+        
+        let sCursoIndex = this.cursosSelectedRef.current.selectedIndex
+        //console.log(sCursoIndex)
+        let selectedCursos = this.state.selectedCursos
+        if( sCursoIndex !== -1){
+            selectedCursos.splice(sCursoIndex,1)
         }
+
+        this.setState((prevState)=>{
+            return{
+                names : prevState.names,
+                selectedCursos : selectedCursos,
+                arrayOpc : prevState.arrayOpc,
+                rendeHorario : prevState.rendeHorario,
+                opcSelect : prevState.opcSelect,
+                focusAble : false
+            }
+        })
     }
+    
     handleGenerar = ()=>{
-        console.log(this.state.selectedCursos)
-        console.log(this.DatabaseDriver.generar(this.state.selectedCursos))
+        
         let newOpc = this.DatabaseDriver.generar(this.state.selectedCursos)
+        //console.log(newOpc)
         this.setState(prevState=>({
             names : prevState.names,
             selectedCursos : prevState.selectedCursos,
@@ -101,6 +108,25 @@ class List extends React.Component{
         }))
     }
 
+    handleInput = (e)=>{
+        console.log(e)
+        const cursoSelected = e.label//this.selectRef.current.options[this.selectRef.current.selectedIndex]
+        if(typeof(cursoSelected) != 'undefined'){
+            let nameCurso = cursoSelected;
+            this.DatabaseDriver.addToTempDatabase(nameCurso);
+            this.setState(prevState=>({
+                names : prevState.names,
+                selectedCursos : prevState.selectedCursos.concat(nameCurso),
+                arrayOpc : prevState.arrayOpc,
+                rendeHorario : prevState.rendeHorario,
+                opcSelect : prevState.opcSelect,
+                focusAble : false
+
+            }))
+            
+        }
+    }
+
     handleSelectOpcion = (e)=>{
         const opcion = e.target.value
         this.setState(prevState=>({
@@ -112,24 +138,35 @@ class List extends React.Component{
             focusAble: false
         }))
     }
+
+    triggerDelete = (task, index)=>{
+        console.log(index)
+        let selectedCursos = [...this.state.selectedCursos]
+        
+        selectedCursos.splice(index, 1);
+        console.log(selectedCursos)
+        this.setState({selectedCursos: selectedCursos})
+    }
     
     render(){
         return(<>
             <div id = "grid"> 
-                <SelectionPanel
-                    ref = {this.cursosSelectedRef} 
-                    list = {this.state.selectedCursos} 
-                    handleGenerar = {this.handleGenerar} 
-                    handleQuitar = {this.handleQuitar} 
-                /> 
-                <div id = "logo"></div>
-
+                
+                
                 <PanelCursos
                     handleChangeFaculty = {this.handleChangeFaculty}
                     names = {this.state.names}
                     handleAgregar = {this.handleAgregar}
+                    handleInput = {this.handleInput}
                     selectRef = {this.selectRef}
                 />
+                <SelectionPanel
+                    ref = {this.cursosSelectedRef} 
+                    selectedCursos = {this.state.selectedCursos} 
+                    handleGenerar = {this.handleGenerar} 
+                    handleQuitar = {this.handleQuitar} 
+                    triggerDelete = {this.triggerDelete}
+                /> 
 
                 <OptionPanel 
                     listOpc = {this.state.arrayOpc} 

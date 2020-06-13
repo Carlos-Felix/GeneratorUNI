@@ -61,3 +61,22 @@ body{
     background: #85144b
     ;
 }
+
+@media screen and (max-width: 800px) {
+    .grid>div{
+        background: #202020;
+        color: white;
+        font-size: 0.7em;
+        text-align: center;
+    }
+    
+  }
+  
+  @media screen and (max-width: 560px) {
+    .grid>div{
+        background: #202020;
+        color: white;
+        font-size: 0.5em;
+        text-align: center;
+    }
+  }

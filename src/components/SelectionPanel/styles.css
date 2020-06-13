@@ -1,0 +1,69 @@
+#panel-cursos{
+    height: 100%;
+    margin: 10px;
+    overflow: auto;
+    padding: 3px;
+    background: #4F2F2F;
+    /*
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  */
+  }
+
+.text-curso-task{
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .selected-curso-task{
+    border: 1px solid black;
+    padding: 6px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    /*height: 15%;*/
+    height: 50px;
+    background: #2f4f4f;
+    /*max-width: 60px;*/
+    
+  }
+
+
+  .icon-cross-task {
+    content: url("../../icon/jean_victor_balin_cross.svg");
+    height: 20px;
+    width: 20px;
+    margin: 0px 6px;
+  }
+
+  #cont-btn-Generar-Quitar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 3px;
+    /*padding: 3px;*/
+  }
+
+  #btn-Generar {
+    background: #800000;
+    padding: 6px 12px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+  }
+

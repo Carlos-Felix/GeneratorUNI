@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import './styles.css'
+
 
 const OptionPanel = React.forwardRef((props,ref)=>{
+    const inputEl = useRef(null);
+    
+    /*
+    useEffect(()=>{
+        
+        if(props.listOpc.length > 0){
+            
+            inputEl.current.focus();
+            }
+            
+        }
+        )*/
     return(
         <>
-            <div></div>
             <div id = "grid-cont-panel">
                 <div id="cont-cont-panel-opc">
                     <div id = "cont-panel-opc">
@@ -26,14 +39,11 @@ const OptionPanel = React.forwardRef((props,ref)=>{
                     </div>
                 </div>
             </div>
-            <div></div>
-            <div></div>
+            
             <div id = "cont-btn-crear-horario">
-                    <button id = "btn-crear-horario" onClick = {props.handleVerHorario}>Ver Horario</button>
+                    <button id = "btn-crear-horario" onClick = {props.handleVerHorario} ref = {inputEl}>Ver Horario</button>
             </div>
-            <div></div>
-            <div></div>
-            <div></div> 
+            
         </>
     )
 });
