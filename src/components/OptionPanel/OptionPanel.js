@@ -22,15 +22,17 @@ const OptionPanel = React.forwardRef((props,ref)=>{
                     <div id = "cont-panel-opc">
                         <div id = "panel-opc" onChange = {props.handleSelectOpcion} ref = {ref}>
                             { 
+                                
                                 props.listOpc.map((d,index)=>{
+                                    
                                     if(index == 0){
                                         return(
-                                            <div className = "option">
+                                            <div key = {d[0]} className = "option">
                                                 <input type="radio" defaultChecked name="opciones" value= {index}></input> {d[0]} </div>
                                         )
                                     }
                                     return(
-                                        <div className = "option">
+                                        <div key = {d[0]} className = "option">
                                             <input type="radio" name="opciones" value= {index}></input> {d[0]} </div>
                                     )
                                 })

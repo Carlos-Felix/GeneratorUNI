@@ -109,7 +109,7 @@ class List extends React.Component{
     }
 
     handleInput = (e)=>{
-        console.log(e)
+        //console.log(e)
         const cursoSelected = e.label//this.selectRef.current.options[this.selectRef.current.selectedIndex]
         if(typeof(cursoSelected) != 'undefined'){
             let nameCurso = cursoSelected;

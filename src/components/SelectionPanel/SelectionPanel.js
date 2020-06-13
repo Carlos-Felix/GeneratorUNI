@@ -10,8 +10,8 @@ const SelectionPanel= React.forwardRef((props,ref)=>{
                     props.selectedCursos.map((d,index)=>{
                         return(
                             
-                            <div className = "selected-curso-task">
-                            <div className = "text-curso-task">
+                            <div key = {index} className = "selected-curso-task">
+                            <div  className = "text-curso-task">
                                   {d}
                           </div>
                           <i className = "icon-cross-task"
