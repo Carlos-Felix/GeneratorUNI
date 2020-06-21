@@ -45,8 +45,40 @@ class DatabaseDriver{
         this.database = NewDatabase;
     }
 
+    rebaseTempDatabase = ()=>{
+        let storedSelectedCursos = JSON.parse(localStorage.getItem("selectedCursos"));
+        let storedTempDatabase = JSON.parse(localStorage.getItem("tempDatabase"));
+        
+        let te= storedTempDatabase.filter((item)=> {
+            for (let key in storedSelectedCursos) {
+                console.log("init")
+                console.log(item.Nombre)
+                console.log(storedSelectedCursos[key])
+              if (item.Nombre === undefined || item.Nombre == storedSelectedCursos[key]){
+                console.log("pasa la prueba")
+                   return true;
+                }
+            }
+            console.log("nada")
+            return false;
+          });
+          //localStorage.setItem("tempDatabase", JSON.stringify(storedTempDatabase));
+          this.tempDatabase = te
+    }
+
     addToTempDatabase = (nameCurso)=>{
-        this.tempDatabase.push(this.findbyNombreInDatabase({"Nombre" : nameCurso}))
+        
+
+        let found = false
+        this.tempDatabase.map((elem)=>{
+            if(elem.Nombre === nameCurso){
+                found = true
+            } 
+        })
+        if(!found) this.tempDatabase.push(this.findbyNombreInDatabase({"Nombre" : nameCurso}))
+        if(this.tempDatabase.length >= 3 ) this.rebaseTempDatabase()
+        
+        localStorage.setItem("tempDatabase", JSON.stringify(this.tempDatabase));
     }
 
     findbyNombreInDatabase = (objJson)=>{
@@ -67,10 +99,19 @@ class DatabaseDriver{
         return null;
     }
 
+    findByNombre = (objJson)=>{
+        let res
+        res = this.findbyNombreInTempDatabase(objJson)
+        if(res == null){
+            return this.findbyNombreInDatabase(objJson)
+        } else return res
+    }
+
     getCursos = (arrayNames)=>{
         let arrayCursos = [];
         for(let n in arrayNames){
-            arrayCursos.push(this.findbyNombreInTempDatabase({"Nombre" : arrayNames[n]}));
+
+            arrayCursos.push(this.findByNombre({"Nombre" : arrayNames[n]}));
         }
         return arrayCursos;
     }
@@ -93,6 +134,11 @@ class DatabaseDriver{
         })
         return arrayOpciones;
     }
+
+    putNaLocalStorage = ()=>{
+        return JSON.parse(localStorage.getItem("selectedCursos"));
+    }
+    getNamesInLocalStorage
 }
 
 export default DatabaseDriver;

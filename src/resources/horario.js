@@ -35,7 +35,7 @@ class Horario{
         this.crucesTeoria = 0;
         this.crucesPractica = 0;
     }
-    insertarCasillaHora(nombre_curso,seccion,hora){
+    enter(nombre_curso,seccion,hora){
         
         if(this.matrizHorario[hora.Hora][hora.Dia].length == 0){
             this.matrizHorario[hora.Hora][hora.Dia].push([nombre_curso,seccion,hora.Prioridad]);
@@ -76,7 +76,7 @@ class Horario{
         for(let seccion in Secciones){
             nomSecc = nomSecc + nombres[i].substring(0,31) + " (" + Secciones[seccion].Seccion + ") | ";
             for(let hora in Secciones[seccion].Horas){
-                this.insertarCasillaHora(nombres[i],Secciones[seccion].Seccion,Secciones[seccion].Horas[hora])
+                this.enter(nombres[i],Secciones[seccion].Seccion,Secciones[seccion].Horas[hora])
             }
             i = i+1;
         }

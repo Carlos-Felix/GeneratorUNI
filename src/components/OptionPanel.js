@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import './styles.css'
+import '../css/OptionPanel.css'
 
 
 const OptionPanel = React.forwardRef((props,ref)=>{

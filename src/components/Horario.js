@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
-import './styles.css'
-import cursoColor from '../../functions/cursoColor';
+import '../css/Horario.css'
+import cursoColor from '../resources/cursoColor';
 
 
 const Horario = React.forwardRef((props,ref)=>{

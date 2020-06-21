@@ -1,20 +1,20 @@
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import React from 'react';
-import OptionPanel from '../OptionPanel'
-import PanelCursos from '../CursosPanel'
-import SelectionPanel from '../SelectionPanel'
-import DatabaseDriver from '../../functions/DatabaseDriver'
-import Horario from '../Horario'
-import './styles.css'
+import OptionPanel from './OptionPanel'
+import ControlPanel from './ControlPanel'
+import SelectionPanel from './SelectionPanel'
+import DatabaseDriver from '../resources/DatabaseDriver'
+import Horario from './Horario'
+import '../css/Api.css'
 
 class List extends React.Component{
     constructor(props){
         super(props);
         this.DatabaseDriver = new DatabaseDriver();
-        
+        this.storeSelected = JSON.parse(localStorage.getItem("selectedCursos"));
         this.state = {
             names : this.DatabaseDriver.getAllFacultyNames('FC'),
-            selectedCursos : [],
+            selectedCursos : this.storeSelected,
             arrayOpc : [],
             rendeHorario :false,
             opcSelect : 0,
@@ -70,15 +70,18 @@ class List extends React.Component{
         if(typeof(cursoSelected) != 'undefined'){
             let nameCurso = cursoSelected;
             this.DatabaseDriver.addToTempDatabase(nameCurso);
+            let selectedCursos = this.state.selectedCursos.concat(nameCurso)
+            localStorage.setItem("selectedCursos", JSON.stringify(selectedCursos));
             this.setState(prevState=>({
                 names : prevState.names,
-                selectedCursos : prevState.selectedCursos.concat(nameCurso),
+                selectedCursos : selectedCursos,
                 arrayOpc : prevState.arrayOpc,
                 rendeHorario : prevState.rendeHorario,
                 opcSelect : prevState.opcSelect,
                 focusAble : false
 
             }))
+            
             
         }
     }
@@ -96,18 +99,19 @@ class List extends React.Component{
     }
 
     triggerDelete = (task, index)=>{
-        console.log(index)
+        //console.log(index)
         let selectedCursos = [...this.state.selectedCursos]
         
         selectedCursos.splice(index, 1);
-        console.log(selectedCursos)
+        localStorage.setItem("selectedCursos", JSON.stringify(selectedCursos));
+        //console.log(selectedCursos)
         this.setState({selectedCursos: selectedCursos,focusAble: false})
     }
     
     render(){
         return(<>
             <div id = "grid">                 
-                <PanelCursos
+                <ControlPanel
                     handleChangeFaculty = {this.handleChangeFaculty}
                     names = {this.state.names}
                     handleInput = {this.handleInput}

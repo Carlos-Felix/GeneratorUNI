@@ -1,6 +1,6 @@
 import React from 'react'
-import ListCursos from './ListCursos'
-import Logo from "../../icon/four_leaves_logo.png";
+import ControlCursos from './ControlCursos'
+import Logo from "../icon/four_leaves_logo.png";
 
 const PanelCursos = (props)=>{
 
@@ -18,7 +18,7 @@ const PanelCursos = (props)=>{
                 </div>
                             
                 
-                <ListCursos 
+                <ControlCursos 
                     listOfNames = {props.names} 
                     //ref = {props.selectRef}
                     handleInput = {props.handleInput}

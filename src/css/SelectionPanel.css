@@ -4,7 +4,7 @@
     overflow: auto;
     padding: 3px;
     background: #4F2F2F;
-    background-image: url("../../icon/logo-fl-white.png");
+    background-image: url("../icon/logo-fl-white.png");
       background-repeat: no-repeat;
     background-size: auto 90%;
     
@@ -45,7 +45,7 @@
 
 
   .icon-cross-task {
-    content: url("../../icon/jean_victor_balin_cross.svg");
+    content: url("../icon/jean_victor_balin_cross.svg");
     height: 20px;
     width: 20px;
     margin: 0px 6px;

@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+import '../css/SelectionPanel.css'
 
 const SelectionPanel= React.forwardRef((props,ref)=>{
     return(
@@ -10,7 +10,7 @@ const SelectionPanel= React.forwardRef((props,ref)=>{
                     props.selectedCursos.map((d,index)=>{
                         return(
                             
-                            <div key = {d} className = "selected-curso-task">
+                            <div key = {d + index} className = "selected-curso-task">
                             <div  className = "text-curso-task">
                                   {d}
                           </div>
