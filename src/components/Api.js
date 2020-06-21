@@ -11,7 +11,7 @@ class List extends React.Component{
     constructor(props){
         super(props);
         this.DatabaseDriver = new DatabaseDriver();
-        this.storeSelected = JSON.parse(localStorage.getItem("selectedCursos"));
+        this.storeSelected = (JSON.parse(localStorage.getItem("selectedCursos") === null))? []:JSON.parse(localStorage.getItem("selectedCursos"))//JSON.parse(localStorage.getItem("selectedCursos"));
         this.state = {
             names : this.DatabaseDriver.getAllFacultyNames('FC'),
             selectedCursos : this.storeSelected,
