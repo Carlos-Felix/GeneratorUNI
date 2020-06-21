@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/GeneratorUNI/static/css/main.791ac863.chunk.css",
-    "main.js": "/GeneratorUNI/static/js/main.c017c2f9.chunk.js",
-    "main.js.map": "/GeneratorUNI/static/js/main.c017c2f9.chunk.js.map",
+    "main.js": "/GeneratorUNI/static/js/main.1bb762fa.chunk.js",
+    "main.js.map": "/GeneratorUNI/static/js/main.1bb762fa.chunk.js.map",
     "runtime-main.js": "/GeneratorUNI/static/js/runtime-main.7085cb5b.js",
     "runtime-main.js.map": "/GeneratorUNI/static/js/runtime-main.7085cb5b.js.map",
     "static/js/2.452674e1.chunk.js": "/GeneratorUNI/static/js/2.452674e1.chunk.js",
     "static/js/2.452674e1.chunk.js.map": "/GeneratorUNI/static/js/2.452674e1.chunk.js.map",
     "index.html": "/GeneratorUNI/index.html",
-    "precache-manifest.bf5c6743cf885d3e57d3720f8d5c6317.js": "/GeneratorUNI/precache-manifest.bf5c6743cf885d3e57d3720f8d5c6317.js",
+    "precache-manifest.b643a6793f83c0b8df01f2f5bb5d820c.js": "/GeneratorUNI/precache-manifest.b643a6793f83c0b8df01f2f5bb5d820c.js",
     "service-worker.js": "/GeneratorUNI/service-worker.js",
     "static/css/main.791ac863.chunk.css.map": "/GeneratorUNI/static/css/main.791ac863.chunk.css.map",
     "static/js/2.452674e1.chunk.js.LICENSE.txt": "/GeneratorUNI/static/js/2.452674e1.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.7085cb5b.js",
     "static/js/2.452674e1.chunk.js",
     "static/css/main.791ac863.chunk.css",
-    "static/js/main.c017c2f9.chunk.js"
+    "static/js/main.1bb762fa.chunk.js"
   ]
 }
