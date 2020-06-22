@@ -1,0 +1,36 @@
+
+.cont-menu{
+    margin: 3px;
+    width: 85%;
+    display: inline-block;
+}
+.agregar-btn{
+    display: inline-block;
+    padding: 10px 3px;
+    width: 11%;
+    border-radius: 3px;
+    text-align: center;
+    margin: 3px 0px 3px 4px;
+    height: 38px;
+    background: #800000;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    
+   .cont-menu{
+       width: 100%;
+   }
+   #panel-lista-curso{
+       grid-template-rows: 50px 40px;
+       
+   }
+   .agregar-btn{
+       grid-column: 2/3;
+       width: 100%;
+   }
+  }
+  
+  

@@ -4,11 +4,10 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 50px auto auto auto auto auto auto;
-    grid-template-rows: minmax(50px,auto);
+    grid-template-columns: 60px auto auto auto auto auto auto;
+    grid-template-rows: minmax(30px,auto);
     gap: 2px;
-    /*margin-top: 100px;*/
-    
+    overflow: auto;
     
 }
 
@@ -17,6 +16,7 @@ body{
     color: white;
     font-size: 0.9em;
     text-align: center;
+    
 }
 
 .grid div:hover{
@@ -28,8 +28,8 @@ body{
     padding: 6px;
     color: white;
     border: 1px solid transparent;
-    /*border: 2px solid white;*/
-    /*text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;*/
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .practica{
@@ -38,7 +38,6 @@ body{
     padding: 6px;
     border: 1px solid transparent;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
-    /*border: 2px solid orange;*/
 }
 .oc{
     background: #333;
@@ -46,37 +45,105 @@ body{
 }
 
 .curso1{
-    background: #308446;
+    background: #246837;
 }
 
 .curso2{
-    background: #7e7b52;
+    background: #686334;
 }
 
 .curso3{
-    background: #3241c7;
+    background: #28339c;
 }
 
 .curso4{
-    background: #85144b
-    ;
+    background: #72053a;
 }
 
-@media screen and (max-width: 800px) {
+.curso5{
+    background: #470303;
+}
+
+.curso6{
+    background: #0a2502;
+}
+
+.curso7{
+    background: #0a013f;
+}
+
+.curso8{
+    background: #054444;
+}
+
+
+
+.day{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    height: 30px;
+}
+.hora{
+    display: flex;
+    align-items: center;
+    padding: 1px 10px;
+    font-size: 0.5em;
+}
+
+@media screen and (max-width: 767px) {
+    .grid{
+        grid-template-rows: minmax(20px,auto);
+    }
     .grid>div{
         background: #202020;
         color: white;
-        font-size: 0.7em;
+        /*font-size: 0.7em;*/
         text-align: center;
     }
-    
+    .practica{
+        font-size: 0.7em;
+    }
+    .teoria{
+        font-size: 0.7em;
+    }
+    .day{
+        text-align: center;
+        vertical-align: middle;
+        line-height: 20px;
+        height: 20px;
+    }
+    .hora{
+        font-size: 0.5em;
+    }
   }
   
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 480px) {
+    .grid{
+        grid-template-rows: minmax(20px,auto);
+    }
     .grid>div{
         background: #202020;
         color: white;
-        font-size: 0.5em;
         text-align: center;
     }
+
+    .practica{
+        font-size: 0.5em;
+    }
+    .teoria{
+        font-size: 0.5em;
+    }
+
+    .day{
+        text-align: center;
+        vertical-align: middle;
+        line-height: 20px;
+        height: 20px;
+    }
+
+    .hora{
+        font-size: 0.7em;
+    }
+    
   }

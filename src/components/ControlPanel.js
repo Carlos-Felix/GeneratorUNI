@@ -2,7 +2,7 @@ import React from 'react'
 import ControlCursos from './ControlCursos'
 import Logo from "../icon/four_leaves_logo.png";
 
-const PanelCursos = (props)=>{
+const PanelCursos =  React.forwardRef((props,ref)=>{
 
     return(
         <>
@@ -20,7 +20,8 @@ const PanelCursos = (props)=>{
                 
                 <ControlCursos 
                     listOfNames = {props.names} 
-                    //ref = {props.selectRef}
+                    ref = {ref}
+                    agregar = {props.agregar}
                     handleInput = {props.handleInput}
                 />
             </div>
@@ -29,7 +30,7 @@ const PanelCursos = (props)=>{
         </>
 
     )
-}
+})
 
 export default PanelCursos;
 /*<div id = "cont-btn-Agregar"><div id = "logo"><img width = "230px" height = "230px" alt = "fourleaves" src ={Logo}/></div>

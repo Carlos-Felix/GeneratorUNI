@@ -1,0 +1,30 @@
+.info{
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-around;
+    margin: 3px 0px 6px 0px;
+    padding: 15px 3px 15px 3px;
+    background: #04072b;
+}
+
+.info-t{
+    background: #246837;
+    padding: 6px;
+    color: white;
+    border: 1px solid transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.info-p{
+    background: #246837;
+    color: orange;
+    padding: 6px;
+    border: 1px solid transparent;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.info-oc{
+    background: #246837;
+    border: 3px solid red;
+}

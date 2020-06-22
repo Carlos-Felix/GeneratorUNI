@@ -4,6 +4,7 @@ import OptionPanel from './OptionPanel'
 import ControlPanel from './ControlPanel'
 import SelectionPanel from './SelectionPanel'
 import DatabaseDriver from '../resources/DatabaseDriver'
+import InfoPanel from '../components/InfoPanel'
 import Horario from './Horario'
 import '../css/Api.css'
 
@@ -24,6 +25,7 @@ class List extends React.Component{
     //REFERENCIAS
     panelOpc = React.createRef();
     verHorarioButton = React.createRef();
+    controlSelect = React.createRef();
     
     //HANDLERS
     handleChangeFaculty = (event)=>{
@@ -107,6 +109,31 @@ class List extends React.Component{
         //console.log(selectedCursos)
         this.setState({selectedCursos: selectedCursos,focusAble: false})
     }
+
+    agregar = ()=>{
+        //console.log(this.controlSelect.current.state.value)
+        if (this.controlSelect.current.state.value===null) return
+        const cursoSelected = this.controlSelect.current.state.value.label
+        if(cursoSelected === null) return
+        if(typeof(cursoSelected) != 'undefined'){
+            let nameCurso = cursoSelected;
+            this.DatabaseDriver.addToTempDatabase(nameCurso);
+            let selectedCursos = this.state.selectedCursos.concat(nameCurso)
+            localStorage.setItem("selectedCursos", JSON.stringify(selectedCursos));
+            this.setState(prevState=>({
+                names : prevState.names,
+                selectedCursos : selectedCursos,
+                arrayOpc : prevState.arrayOpc,
+                rendeHorario : prevState.rendeHorario,
+                opcSelect : prevState.opcSelect,
+                focusAble : false
+
+            }))
+            
+            
+        }
+    
+    }
     
     render(){
         return(<>
@@ -115,6 +142,8 @@ class List extends React.Component{
                     handleChangeFaculty = {this.handleChangeFaculty}
                     names = {this.state.names}
                     handleInput = {this.handleInput}
+                    agregar = {this.agregar}
+                    ref = {this.controlSelect}
                 />
                 <SelectionPanel 
                     selectedCursos = {this.state.selectedCursos} 
@@ -132,6 +161,7 @@ class List extends React.Component{
                     }}
                 />
             </div>
+            <InfoPanel></InfoPanel>
             <Horario 
                 render = {this.state.rendeHorario} 
                 focusAble = {this.state.focusAble} 

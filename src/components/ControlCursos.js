@@ -1,5 +1,6 @@
 import React from 'react'
 import Select from 'react-select'
+import '../css/ControlCursos.css'
 
 const customStyles = {
   option: (provided, state) => ({
@@ -49,30 +50,18 @@ const createList = (list)=>{
 
 const ListCursos = React.forwardRef((props,ref)=>{
     return(
+      <>
       <div className = "cont-menu">
-        <Select //ref = {ref} 
+        <Select ref = {ref} 
                 styles={customStyles} 
                 options = {createList(props.listOfNames)}
                 onChange = {props.handleInput}
                 >        
         </Select>
+        
       </div>
+      <button className = "agregar-btn" onClick = {props.agregar} >+</button>
+      </>
     )
 })
 export default ListCursos;
-/*
-<select id = "lista-cursos" size="10" >
-                  { 
-                    props.listOfNames.map((d,index)=>{
-                          if(index == 0){
-                            return(
-                                <option selected = "selected">{d}</option>
-                              )
-                          }
-                          return(
-                            <option >{d}</option>
-                          )
-                      })
-                  }
-        </select>
-        */

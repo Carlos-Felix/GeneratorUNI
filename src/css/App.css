@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+:root{
+	background-image: url("../icon/i1.png");
+}
+
 body {
   background: #333;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

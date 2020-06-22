@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/SelectionPanel.css'
+import cursoColor from '../resources/cursoColor'
 
 const SelectionPanel= React.forwardRef((props,ref)=>{
     return(
@@ -10,7 +11,7 @@ const SelectionPanel= React.forwardRef((props,ref)=>{
                     props.selectedCursos.map((d,index)=>{
                         return(
                             
-                            <div key = {d + index} className = "selected-curso-task">
+                            <div key = {d + index} className = "selected-curso-task"/* + cursoColor.getClassColor(index)}*/>
                             <div  className = "text-curso-task">
                                   {d}
                           </div>
@@ -29,7 +30,7 @@ const SelectionPanel= React.forwardRef((props,ref)=>{
             </div>
             
             <div id = "cont-btn-Generar-Quitar">
-                <button type="button" id = "btn-Generar" onClick = {props.handleGenerar}>Generar</button>
+                <button type="button" id = "btn-Generar" onClick = {props.handleGenerar}>GENERAR</button>
                 
             </div>
               
@@ -39,12 +40,3 @@ const SelectionPanel= React.forwardRef((props,ref)=>{
     )
 })
 export default SelectionPanel;
-/*<select id = "cursos-seleccionados" size="20" ref = {ref}>
-                { 
-                    props.selectedCursos.map((d)=>{
-                        return(
-                            <option>{d}</option>
-                        )
-                    })
-                }
-            </select><img src={require("../../images/cancel.svg")}/><button type="button" id = "btn-Quitar" onClick = {props.handleQuitar}>Quitar Curso</button>*/

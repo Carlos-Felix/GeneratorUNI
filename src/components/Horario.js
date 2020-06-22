@@ -22,13 +22,13 @@ const Horario = React.forwardRef((props,ref)=>{
         return(
             <>
             <div className = "grid" tabIndex = "1" ref={inputEl}>
-            <div style = {{fontsize : "0.5em"}}>Horas</div>
-            <div style = {{fontSize : "0.5em"}}>LUNES</div>
-            <div style = {{fontSize : "0.5em"}}>MARTES</div>
-            <div style = {{fontSize : "0.5em"}}>MIERCOLES</div>
-            <div style = {{fontSize : "0.5em"}}>JUEVES</div>
-            <div style={{fontSize : "0.5em"}}>VIERNES</div>
-            <div style={{fontSize : "0.5em"}}>SABADO</div>
+            <div className = "day" >Horas</div>
+            <div className = "day" >LUNES</div>
+            <div className = "day" >MARTES</div>
+            <div className = "day" >MIERCOLES</div>
+            <div className = "day" >JUEVES</div>
+            <div className = "day" >VIERNES</div>
+            <div className = "day" >SABADO</div>
             
             {
                 
@@ -38,7 +38,7 @@ const Horario = React.forwardRef((props,ref)=>{
                         
                         return(
                             <>
-                                <div>{indexHora}:00-{indexHora +1}:00</div>
+                                <div className = "hora">{indexHora}:00- {indexHora +1}:00</div>
                                 {
                                     arrayDia.map((dia,indexDia)=>{
                                         if(indexDia >= 1 && indexDia<= 6){
@@ -52,12 +52,12 @@ const Horario = React.forwardRef((props,ref)=>{
                                             let claseCurso = classCurso.classCurso(dia[0][0]);
                                             if(dia[0][2] == 1){
                                                 return (
-                                                    <div><div className = "teoria" className = {"teoria " + claseCurso}>{dia[0][0]} ({dia[0][1]})</div></div>
+                                                    <div><div className = {"teoria " + claseCurso}>{dia[0][0]} ({dia[0][1]})</div></div>
                                                 )
                                             }
                                             if(dia[0][2] == 2){
                                                 return (
-                                                    <div><div className = "practica" className = {"practica " + claseCurso}>{dia[0][0]} ({dia[0][1]})</div></div>
+                                                    <div><div className = {"practica " + claseCurso}>{dia[0][0]} ({dia[0][1]})</div></div>
                                                 )
                                             }
                                         }

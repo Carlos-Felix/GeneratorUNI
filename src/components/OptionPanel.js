@@ -4,16 +4,7 @@ import '../css/OptionPanel.css'
 
 const OptionPanel = React.forwardRef((props,ref)=>{
     const inputEl = useRef(null);    
-    /*useEffect(()=>{
-        
-        if(props.listOpc.length > 0){
-            
-            inputEl.current.focus();
-            }
-            
-        }
-
-    )*/
+    
     return(
         <>
             <div id = "grid-cont-panel">
@@ -42,9 +33,8 @@ const OptionPanel = React.forwardRef((props,ref)=>{
             </div>
             
             <div id = "cont-btn-crear-horario">
-                    <button id = "btn-crear-horario" onClick = {props.handleVerHorario} ref = {ref.verHorarioButton} >Ver Horario</button>
+                    <button id = "btn-crear-horario" onClick = {props.handleVerHorario} ref = {ref.verHorarioButton} >VER HORARIO</button>
             </div>
-            
         </>
     )
 });
