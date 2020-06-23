@@ -7,7 +7,7 @@ function fenic(arr,n,nombres) {
     arr.reduce((a,b)=>{
         return a.map((x)=>{
             return b.map((y)=>{
-                if( x.concat([y]).length == n) res.push(h.detect(x.concat([y]),nombres))
+                if( x.concat([y]).length === n) res.push(h.detect(x.concat([y]),nombres))
                 return x.concat([y])
             })
         }).reduce((a,b)=>{

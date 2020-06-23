@@ -37,22 +37,22 @@ class Horario{
     }
     enter(nombre_curso,seccion,hora){
         
-        if(this.matrizHorario[hora.Hora][hora.Dia].length == 0){
+        if(this.matrizHorario[hora.Hora][hora.Dia].length === 0){
             this.matrizHorario[hora.Hora][hora.Dia].push([nombre_curso,seccion,hora.Prioridad]);
         }else{
-            if(hora.Prioridad == 1){
+            if(hora.Prioridad === 1){
                 this.crucesTeoria  = this.crucesTeoria +1;
             }
-            if(hora.Prioridad == 2){
+            if(hora.Prioridad === 2){
                 let band = 0;
                 for(let c in this.matrizHorario[hora.Hora][hora.Dia]){
-                    if(this.matrizHorario[hora.Hora][hora.Dia][c][2] == 2){
+                    if(this.matrizHorario[hora.Hora][hora.Dia][c][2] === 2){
                         this.crucesPractica = this.crucesPractica +1;
                         band = 1;
                         break;
                     }
                 }
-                if(band == 0){
+                if(band === 0){
                     this.crucesTeoria = this.crucesTeoria +1;
                 }
             }

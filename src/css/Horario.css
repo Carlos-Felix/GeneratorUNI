@@ -4,6 +4,7 @@ body{
 
 .grid{
     display: grid;
+    background: #333;
     grid-template-columns: 60px auto auto auto auto auto auto;
     grid-template-rows: minmax(30px,auto);
     gap: 2px;
@@ -17,6 +18,10 @@ body{
     font-size: 0.9em;
     text-align: center;
     
+}
+
+.c-emp{
+    background: #202020;
 }
 
 .grid div:hover{
@@ -89,6 +94,7 @@ body{
     align-items: center;
     padding: 1px 10px;
     font-size: 0.5em;
+    background: #202020;
 }
 
 @media screen and (max-width: 767px) {
@@ -96,7 +102,7 @@ body{
         grid-template-rows: minmax(20px,auto);
     }
     .grid>div{
-        background: #202020;
+        /*background: #202020;*/
         color: white;
         /*font-size: 0.7em;*/
         text-align: center;
@@ -123,7 +129,7 @@ body{
         grid-template-rows: minmax(20px,auto);
     }
     .grid>div{
-        background: #202020;
+        /*background: #202020;*/
         color: white;
         text-align: center;
     }

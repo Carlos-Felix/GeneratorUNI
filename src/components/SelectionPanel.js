@@ -1,10 +1,9 @@
 import React from 'react'
 import '../css/SelectionPanel.css'
-import cursoColor from '../resources/cursoColor'
+//import cursoColor from '../resources/cursoColor'
 
-const SelectionPanel= React.forwardRef((props,ref)=>{
+const SelectionPanel= (props,ref)=>{
     return(
-        <>
         <div id = "panel-cursos-seleccionados">
             <div id = "panel-cursos" >
                 { 
@@ -35,8 +34,6 @@ const SelectionPanel= React.forwardRef((props,ref)=>{
             </div>
               
         </div>
-        
-        </>
     )
-})
+}
 export default SelectionPanel;

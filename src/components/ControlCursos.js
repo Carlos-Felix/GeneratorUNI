@@ -29,7 +29,7 @@ const customStyles = {
 
   singleValue: (provided, state) => {
     const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = 'opacity 300ms';
+    //const transition = 'opacity 300ms';
     const color = 'white';
     //const background = 'yellow';
     //const background = 'yellow';

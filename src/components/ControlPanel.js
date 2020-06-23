@@ -1,6 +1,6 @@
 import React from 'react'
 import ControlCursos from './ControlCursos'
-import Logo from "../icon/four_leaves_logo.png";
+//import Logo from "../icon/four_leaves_logo.png";
 
 const PanelCursos =  React.forwardRef((props,ref)=>{
 

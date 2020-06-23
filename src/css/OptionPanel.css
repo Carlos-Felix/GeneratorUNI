@@ -1,4 +1,25 @@
 #cont-btn-crear-horario {
     text-align: center;
     grid-column: 1/7;
+    grid-row: 5/6;
+    
   }
+  #btn-crear-horario {
+    background: #800000;
+    padding: 6px 12px;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.9em;
+  }
+
+  .option {
+    border: 1px solid white;
+    padding: 2px;
+    margin: 2px;
+  }
+  
+  .option:hover {
+    background: #800000;
+  }
+  

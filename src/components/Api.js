@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+//import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import React from 'react';
 import OptionPanel from './OptionPanel'
 import ControlPanel from './ControlPanel'
 import SelectionPanel from './SelectionPanel'
 import DatabaseDriver from '../resources/DatabaseDriver'
 import InfoPanel from '../components/InfoPanel'
+//import InfoOption from '../components/InfoOption'
 import Horario from './Horario'
 import '../css/Api.css'
 
@@ -51,7 +52,7 @@ class List extends React.Component{
             opcSelect : 0,
             focusAble : prevState.focusAble
         }))
-        console.log(this.verHorarioButton)
+        //console.log(this.verHorarioButton)
         this.verHorarioButton.current.focus()
 
     }
@@ -150,7 +151,6 @@ class List extends React.Component{
                     handleGenerar = {this.handleGenerar} 
                     triggerDelete = {this.triggerDelete}
                 /> 
-
                 <OptionPanel 
                     listOpc = {this.state.arrayOpc} 
                     handleSelectOpcion = {this.handleSelectOpcion} 

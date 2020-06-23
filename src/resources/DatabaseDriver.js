@@ -10,19 +10,19 @@ class DatabaseDriver{
 
     getAllFacultyNames = (faculty)=>{
         
-        if(faculty == 'FC'){
+        if(faculty === 'FC'){
             this.changeDatabase(dataFC);
             return this.getAllNamesFromDatabase();
         }
-        if(faculty == 'FIQT'){
+        if(faculty === 'FIQT'){
             
             return []
         }
-        if(faculty == 'FIA'){
+        if(faculty === 'FIA'){
             
             return []
         }
-        if(faculty == 'FIM'){
+        if(faculty === 'FIM'){
             this.changeDatabase(dataFIM);
             return this.getAllNamesFromDatabase();
         }
@@ -54,7 +54,7 @@ class DatabaseDriver{
                 console.log("init")
                 console.log(item.Nombre)
                 console.log(storedSelectedCursos[key])
-              if (item.Nombre === undefined || item.Nombre == storedSelectedCursos[key]){
+              if (item.Nombre === undefined || item.Nombre === storedSelectedCursos[key]){
                 console.log("pasa la prueba")
                    return true;
                 }
@@ -83,7 +83,7 @@ class DatabaseDriver{
 
     findbyNombreInDatabase = (objJson)=>{
         for(let i in this.database){
-            if(this.database[i].Nombre == objJson.Nombre){
+            if(this.database[i].Nombre === objJson.Nombre){
                 return this.database[i];
             }
         }
@@ -92,7 +92,7 @@ class DatabaseDriver{
 
     findbyNombreInTempDatabase = (objJson)=>{
         for(let i in this.tempDatabase){
-            if(this.tempDatabase[i].Nombre == objJson.Nombre){
+            if(this.tempDatabase[i].Nombre === objJson.Nombre){
                 return this.tempDatabase[i];
             }
         }

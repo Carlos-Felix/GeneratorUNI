@@ -3,7 +3,7 @@ import '../css/Horario.css'
 import cursoColor from '../resources/cursoColor';
 
 
-const Horario = React.forwardRef((props,ref)=>{
+const Horario = React.forwardRef((props)=>{
     const inputEl = useRef(null);
     const classCurso = new cursoColor(props.selectedC);
 
@@ -16,7 +16,6 @@ const Horario = React.forwardRef((props,ref)=>{
             }
         }
         )
-    //console.log(props.opcionSelect)
     
     if(props.render && props.array[props.opcionSelect] != null){
         return(
@@ -42,20 +41,20 @@ const Horario = React.forwardRef((props,ref)=>{
                                 {
                                     arrayDia.map((dia,indexDia)=>{
                                         if(indexDia >= 1 && indexDia<= 6){
-                                        if(dia.length == 0){
+                                        if(dia.length === 0){
                                             return(
-                                                <div></div>
+                                                <div className = "c-emp"></div>
                                             )
                                         }
                                         
-                                        if(dia.length == 1){
+                                        if(dia.length === 1){
                                             let claseCurso = classCurso.classCurso(dia[0][0]);
-                                            if(dia[0][2] == 1){
+                                            if(dia[0][2] === 1){
                                                 return (
                                                     <div><div className = {"teoria " + claseCurso}>{dia[0][0]} ({dia[0][1]})</div></div>
                                                 )
                                             }
-                                            if(dia[0][2] == 2){
+                                            if(dia[0][2] === 2){
                                                 return (
                                                     <div><div className = {"practica " + claseCurso}>{dia[0][0]} ({dia[0][1]})</div></div>
                                                 )
@@ -66,14 +65,14 @@ const Horario = React.forwardRef((props,ref)=>{
                                                 {
                                                     dia.map((curso,index)=>{
                                                         let claseCurso = classCurso.classCurso(curso[0]);
-                                                        if(curso[2] == 1){
+                                                        if(curso[2] === 1){
                                                             return (
-                                                                <div className = "teoria" className = {"teoria " + claseCurso}>{curso[0]} ({curso[1]})</div>
+                                                                <div className = {"teoria " + claseCurso}>{curso[0]} ({curso[1]})</div>
                                                             )
                                                         }
-                                                        if(curso[2] == 2){
+                                                        if(curso[2] === 2){
                                                             return (
-                                                                <div className = "practica" className = {"practica " +  claseCurso}>{curso[0]} ({curso[1]})</div>
+                                                                <div className = {"practica " +  claseCurso}>{curso[0]} ({curso[1]})</div>
                                                             )
                                                         }
                                                     })

@@ -1,0 +1,18 @@
+.info-option{
+    grid-column: 1/7;
+    grid-row: 3/4;
+    background: rgb(6, 104, 134);
+    margin: 3px 0px 0px 0px;
+    padding: 1px 16px 1px 16px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.info-option a{
+    padding: 3px 12px 3px 12px;
+    color: white;
+}
+
+#link-f{
+    background: rgb(75, 6, 6);
+}

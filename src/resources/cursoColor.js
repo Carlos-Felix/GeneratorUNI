@@ -59,9 +59,9 @@ class cursoColor{
         let n = this.arrayCurso.length;
         let i;
         for(i = 0; i < n;i++){
-            if((nameCurso == this.arrayCurso[i])) break;
+            if((nameCurso === this.arrayCurso[i])) break;
         }
-        if(i == n){
+        if(i === n){
             return -1;
         }
         return i;

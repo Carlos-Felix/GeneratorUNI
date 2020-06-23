@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/InfoPanel.css'
 
-const InfoPanel =  React.forwardRef((props,ref)=>{
+const InfoPanel = (props,ref)=>{
 
     return(
         <>
@@ -12,6 +12,6 @@ const InfoPanel =  React.forwardRef((props,ref)=>{
             </div>
         </>
     )
-})
+}
 
 export default InfoPanel;
