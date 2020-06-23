@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c633e52488d1ce67031106699f01dd72",
+    "revision": "77f4a49c7d279a8f5e1209a397aea16e",
     "url": "/GeneratorUNI/index.html"
   },
   {
-    "revision": "bae12f2ba1022480e41e",
-    "url": "/GeneratorUNI/static/css/main.4ee61c46.chunk.css"
+    "revision": "1e22ee9d5e6a3b883033",
+    "url": "/GeneratorUNI/static/css/main.ad12e21a.chunk.css"
   },
   {
-    "revision": "05a569c615181a095862",
-    "url": "/GeneratorUNI/static/js/2.7356b908.chunk.js"
+    "revision": "55a0d4f417ed13b83e21",
+    "url": "/GeneratorUNI/static/js/2.e00e385e.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/GeneratorUNI/static/js/2.7356b908.chunk.js.LICENSE.txt"
+    "url": "/GeneratorUNI/static/js/2.e00e385e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bae12f2ba1022480e41e",
-    "url": "/GeneratorUNI/static/js/main.8914b5a1.chunk.js"
+    "revision": "1e22ee9d5e6a3b883033",
+    "url": "/GeneratorUNI/static/js/main.e573b7b7.chunk.js"
   },
   {
     "revision": "98f70c3b85bffa7d778a",
     "url": "/GeneratorUNI/static/js/runtime-main.7085cb5b.js"
-  },
-  {
-    "revision": "982254e9ffc94049de360362c6eb8bf0",
-    "url": "/GeneratorUNI/static/media/four_leaves_logo.982254e9.png"
   },
   {
     "revision": "a683b783dd02fc7d338b76341a6ee794",
