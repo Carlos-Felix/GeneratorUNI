@@ -1,5 +1,6 @@
 //import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import React from 'react';
+//import PrintButton from '../components/PrintButton'
 import OptionPanel from './OptionPanel'
 import ControlPanel from './ControlPanel'
 import SelectionPanel from './SelectionPanel'
@@ -27,6 +28,7 @@ class List extends React.Component{
     panelOpc = React.createRef();
     verHorarioButton = React.createRef();
     controlSelect = React.createRef();
+    refd = React.createRef()
     
     //HANDLERS
     handleChangeFaculty = (event)=>{
@@ -162,15 +164,17 @@ class List extends React.Component{
                 />
             </div>
             <InfoPanel></InfoPanel>
-            <Horario 
+            
+            <Horario
                 render = {this.state.rendeHorario} 
                 focusAble = {this.state.focusAble} 
                 opcionSelect = {this.state.opcSelect} 
                 selectedC = {this.state.selectedCursos} 
                 array = {this.state.arrayOpc}
             />
+            
           </>
         )
     }
-}
+}//<PrintButton id={"grid-horario"} label={"Umpr"}/>
 export default List;

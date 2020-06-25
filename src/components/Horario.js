@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react'
 import '../css/Horario.css'
 import cursoColor from '../resources/cursoColor';
 
-
 const Horario = React.forwardRef((props)=>{
     const inputEl = useRef(null);
     const classCurso = new cursoColor(props.selectedC);
@@ -20,7 +19,7 @@ const Horario = React.forwardRef((props)=>{
     if(props.render && props.array[props.opcionSelect] != null){
         return(
             <>
-            <div className = "grid" tabIndex = "1" ref={inputEl}>
+            <div id = "grid-horario" tabIndex = "1" ref={inputEl}>
             <div className = "day" >Horas</div>
             <div className = "day" >LUNES</div>
             <div className = "day" >MARTES</div>
@@ -90,8 +89,8 @@ const Horario = React.forwardRef((props)=>{
             })
             }
     </div>
-    
     </>
+    
         )
     }
     

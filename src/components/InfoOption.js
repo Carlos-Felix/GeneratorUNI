@@ -6,7 +6,7 @@ const InfoOption =  (props)=>{
     if(props.o[0] === 0){
         return(
                 <div className = "info-option">
-                    <div>:3</div><div id = "link-f"><a href = "https://fourleaves.org.pe/">visítanos</a></div>
+                    <div>:3</div><div id = "link-f"><a href = "https://fourleaves.org.pe/" target="_blank">visítanos</a></div>
                 </div>
         )
     }else{

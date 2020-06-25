@@ -2,7 +2,7 @@ body{
     background: #333;
 }
 
-.grid{
+#grid-horario{
     display: grid;
     background: #333;
     grid-template-columns: 60px auto auto auto auto auto auto;
@@ -11,8 +11,7 @@ body{
     overflow: auto;
     
 }
-
-.grid>div{
+#grid-horario>div{
     background: #202020;
     color: white;
     font-size: 0.9em;
@@ -24,7 +23,7 @@ body{
     background: #202020;
 }
 
-.grid div:hover{
+#grid-horario div:hover{
     border: 1px solid blue;
 }
 
@@ -98,10 +97,10 @@ body{
 }
 
 @media screen and (max-width: 767px) {
-    .grid{
+    #grid-horario{
         grid-template-rows: minmax(20px,auto);
     }
-    .grid>div{
+    #grid-horario>div{
         /*background: #202020;*/
         color: white;
         /*font-size: 0.7em;*/
@@ -125,10 +124,10 @@ body{
   }
   
   @media screen and (max-width: 480px) {
-    .grid{
+    #grid-horario{
         grid-template-rows: minmax(20px,auto);
     }
-    .grid>div{
+    #grid-horario>div{
         /*background: #202020;*/
         color: white;
         text-align: center;
