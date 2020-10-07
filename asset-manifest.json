@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/GeneratorUNI/static/css/main.7b51a37f.chunk.css",
-    "main.js": "/GeneratorUNI/static/js/main.09c60c1d.chunk.js",
+    "main.css": "/GeneratorUNI/static/css/main.751df504.chunk.css",
+    "main.js": "/GeneratorUNI/static/js/main.28452edc.chunk.js",
     "runtime-main.js": "/GeneratorUNI/static/js/runtime-main.de568b2b.js",
     "static/js/2.77d5a19b.chunk.js": "/GeneratorUNI/static/js/2.77d5a19b.chunk.js",
     "index.html": "/GeneratorUNI/index.html",
-    "precache-manifest.efa878cd1bd811552d602d7ce51b56b1.js": "/GeneratorUNI/precache-manifest.efa878cd1bd811552d602d7ce51b56b1.js",
+    "precache-manifest.a9fc2502cc3b4a62a5a419ec3e145aba.js": "/GeneratorUNI/precache-manifest.a9fc2502cc3b4a62a5a419ec3e145aba.js",
     "service-worker.js": "/GeneratorUNI/service-worker.js",
     "static/js/2.77d5a19b.chunk.js.LICENSE.txt": "/GeneratorUNI/static/js/2.77d5a19b.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/GeneratorUNI/static/media/logo-fl-white.144e6770.png"
@@ -13,7 +13,7 @@
   "entrypoints": [
     "static/js/runtime-main.de568b2b.js",
     "static/js/2.77d5a19b.chunk.js",
-    "static/css/main.7b51a37f.chunk.css",
-    "static/js/main.09c60c1d.chunk.js"
+    "static/css/main.751df504.chunk.css",
+    "static/js/main.28452edc.chunk.js"
   ]
 }
