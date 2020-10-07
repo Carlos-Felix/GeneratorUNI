@@ -1,6 +1,6 @@
 import React from 'react'
-import Select from 'react-select'
-import '../css/ControlCursos.css'
+import Select from 'react-select';
+//import {CURSOS} from '../shared/cursos'
 
 const customStyles = {
   option: (provided, state) => ({
@@ -39,29 +39,45 @@ const customStyles = {
 }
 
 
-const createList = (list)=>{
-  let options = []
-  list.map((d,index)=>{
-    options.push({value :d, label : d})
-  })
-  return options;
-}
 
 
-const ListCursos = React.forwardRef((props,ref)=>{
+
+//import '../css/SelectionPanel.css'
+//import cursoColor from '../resources/cursoColor'
+
+
+
+
+const ControlPanel = (props)=>{
+    console.log("AKAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+    
+      
+    /*
+    const createList = ()=>{
+      let options = [];
+      console.log("Ordenando la listaaaaaaaaaaaaa")
+      
+      props.cursos.map((curso,index)=>{
+        //console.log(d.Nombre)
+        console.log("esto=")
+        options.push({value :curso.Nombre, label : curso.Codigo + ' - ' + curso.Nombre})
+      })
+      return options;
+    }
+    let opciones = createList()
+    */
     return(
-      <>
-      <div className = "cont-menu">
-        <Select ref = {ref} 
-                styles={customStyles} 
-                options = {createList(props.listOfNames)}
-                onChange = {props.handleInput}
-                >        
+      
+      <div className = "col-12 col-sm-5 col-md-5">
+        <Select
+          options = {props.listaSelect}
+          styles={customStyles} 
+          onChange = {props.handleInput}
+        >      
         </Select>
         
+        
       </div>
-      <button className = "agregar-btn" onClick = {props.agregar} >+</button>
-      </>
     )
-})
-export default ListCursos;
+}
+export default ControlPanel;

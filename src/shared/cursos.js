@@ -1,3 +1,5 @@
+export const CURSOS = 
+
 [
     {   
         "Codigo" : "BFI01",

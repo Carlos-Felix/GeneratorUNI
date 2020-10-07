@@ -1,0 +1,5 @@
+export const CHANGE_FACULTY = 'CHANGE_FACULTY';
+export const ADD_CURSO = 'ADD_CURSO';
+export const DELETE_CURSO = 'DELETE_CURSO';
+export const ADD_OPCIONES = 'ADD_OPCIONES';
+export const RESET_OPCIONES = 'RESET_OPCIONES';

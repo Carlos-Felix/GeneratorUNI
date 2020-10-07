@@ -1,0 +1,73 @@
+.panel {
+  height: 410px; }
+
+.panel-cursos-seleccionados > div {
+  height: 370px;
+  background: #202020;
+  padding: 6px 8px 2px 8px;
+  width: 100%;
+  text-align: center; }
+
+.panel-cursos-seleccionados > div > div {
+  max-height: 320px;
+  min-height: 320px;
+  overflow: auto;
+  background: #2f4f4f;
+  width: 100%;
+  background-image: url("../icons/logo-fl-white.png");
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: center center; }
+
+.panel-cursos-seleccionados > div > a {
+  background: #800000;
+  padding: 6px 12px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 3px;
+  font-size: 0.9em;
+  width: 100%; }
+
+.panel-cursos-seleccionados > div > a:hover {
+  border: 2px solid black;
+  background: gray;
+  color: black; }
+
+.selected-curso-task {
+  border: 1px solid black;
+  padding: 6px 12px 6px 0px;
+  border-radius: 6px;
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  /*height: 15%;*/
+  height: 50px;
+  background: #4F2F2F;
+  /*max-width: 60px;*/ }
+
+.selected-curso-task .codigo {
+  height: 50px;
+  padding: 12px 0px;
+  text-align: center;
+  min-width: 65px;
+  max-width: 65px;
+  background: green; }
+
+.selected-curso-task > div {
+  color: white;
+  display: inline-block;
+  overflow: hidden; }
+
+.selected-curso-task > i {
+  content: url("../icons/jean_victor_balin_cross.svg");
+  height: 30px;
+  width: 30px;
+  margin: 0px 0px;
+  background: black;
+  border-radius: 33%;
+  padding: 7px; }
+
+.selected-curso-task > i:hover {
+  background: gray; }

@@ -1,0 +1,162 @@
+.panel-horario {
+  display: flex;
+  justify-content: center; }
+
+.horario-header {
+  background: blue;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 3px 15px 3px 15px; }
+
+.horario-header > h4 {
+  margin-bottom: 15px;
+  margin-top: 15px; }
+
+#grid-horario {
+  display: grid;
+  background: #333;
+  grid-template-columns: 60px auto auto auto auto auto auto;
+  grid-template-rows: minmax(30px, auto);
+  gap: 2px;
+  min-width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  margin: 3px 15px 3px 15px; }
+
+#grid-horario > div {
+  background: #202020;
+  color: white;
+  font-size: 0.9em;
+  text-align: center; }
+
+.c-emp {
+  background: #202020; }
+
+#grid-horario div:hover {
+  /*border: 1px solid blue;*/
+  color: red; }
+
+.teoria {
+  background: #333;
+  padding: 6px;
+  color: white;
+  border: 1px solid transparent;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.practica {
+  background: #333;
+  color: orange;
+  padding: 6px;
+  border: 1px solid transparent;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; }
+
+.oc {
+  background: #333;
+  border: 3px solid red; }
+
+.curso1 {
+  background: #246837; }
+
+.curso2 {
+  background: #686334; }
+
+.curso3 {
+  background: #28339c; }
+
+.curso4 {
+  background: #72053a; }
+
+.curso5 {
+  background: #470303; }
+
+.curso6 {
+  background: #0a2502; }
+
+.curso7 {
+  background: #0a013f; }
+
+.curso8 {
+  background: #054444; }
+
+.day {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  height: 30px; }
+
+.hora {
+  display: flex;
+  align-items: center;
+  padding: 1px 10px;
+  font-size: 0.5em;
+  background: #202020; }
+
+@media screen and (max-width: 767px) {
+  #grid-horario {
+    grid-template-rows: minmax(20px, auto); }
+  #grid-horario > div {
+    /*background: #202020;*/
+    color: white;
+    /*font-size: 0.7em;*/
+    text-align: center; }
+  .practica {
+    font-size: 0.7em; }
+  .teoria {
+    font-size: 0.7em; }
+  .day {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    height: 20px; }
+  .hora {
+    font-size: 0.5em; } }
+
+@media screen and (max-width: 480px) {
+  #grid-horario {
+    grid-template-rows: minmax(20px, auto); }
+  #grid-horario > div {
+    /*background: #202020;*/
+    color: white;
+    text-align: center; }
+  .practica {
+    font-size: 0.5em; }
+  .teoria {
+    font-size: 0.5em; }
+  .day {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    height: 20px; }
+  .hora {
+    font-size: 0.7em; } }
+
+.info {
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: space-around;
+  margin: 3px 0px 6px 0px;
+  padding: 9px 3px 9px 3px;
+  background: #04072b; }
+
+.info-t {
+  background: #246837;
+  padding: 3px;
+  color: white;
+  font-size: 15px;
+  border: 1px solid transparent;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.info-p {
+  background: #246837;
+  color: orange;
+  font-size: 15px;
+  padding: 3px;
+  border: 1px solid transparent;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; }
+
+.info-oc {
+  background: #246837;
+  border: 3px solid red; }

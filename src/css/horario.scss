@@ -1,14 +1,32 @@
-body{
-    background: #333;
+.panel-horario {
+    display: flex;
+    justify-content: center;
+    
 }
 
+.horario-header {
+    background: blue;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 3px 15px 3px 15px;
+}
+ 
+.horario-header > h4 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 #grid-horario{
     display: grid;
-    background: #333;
+    background: #333;  
     grid-template-columns: 60px auto auto auto auto auto auto;
     grid-template-rows: minmax(30px,auto);
     gap: 2px;
+    min-width: 100%;
+    max-width: 100%;
     overflow: auto;
+    margin: 3px 15px 3px 15px;
+
     
 }
 #grid-horario>div{
@@ -24,7 +42,8 @@ body{
 }
 
 #grid-horario div:hover{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
+    color: red;
 }
 
 .teoria{
@@ -152,3 +171,36 @@ body{
     }
     
   }
+
+  .info{
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-around;
+    margin: 3px 0px 6px 0px;
+    padding: 9px 3px 9px 3px;
+    background: #04072b;
+}
+
+.info-t{
+    background: #246837;
+    padding: 3px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.info-p{
+    background: #246837;
+    color: orange;
+    font-size: 15px;
+    padding: 3px;
+    border: 1px solid transparent;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.info-oc{
+    background: #246837;
+    border: 3px solid red;
+}

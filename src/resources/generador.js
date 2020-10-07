@@ -22,18 +22,36 @@ function fenic(arr,n,nombres) {
 
 function GeneradorHorarios(Cursos){
     let nombres = [];
-    let ArrayC = []
-    let nOPC = 1
+    let ArrayCursos = []
+    let cantOpciones = 1
     
     Cursos.map((c)=>{
-        nOPC = nOPC*c.Secciones.length
-        ArrayC.push(c.Secciones)
+        cantOpciones = cantOpciones*c.Secciones.length
+        ArrayCursos.push(c.Secciones)
         nombres.push(c.Nombre)
     })
 
-    if(nOPC <= 4100){
-        return fenic(ArrayC,Cursos.length,nombres)
+    if(cantOpciones <= 4100){
+        let res =  fenic(ArrayCursos,Cursos.length,nombres)
+        
+        res.sort(function(a,b){
+            if(a[1][1] > b[1][1]){
+                return 1;
+            }else if(a[1][1] < b[1][1]){
+                return -1;
+            }else{
+                if(a[1][0] > b[1][0]){
+                    return 1
+                }else if(a[1][0] < b[1][0]) {
+                    return -1;
+                }   
+            }
+            
+        })
+        return res
     }
+
+
     alert("¡Hay muchas posibilidades!")
     return []
 }

@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+}
+ body {
+  background:  $color-oscuro-claro;
+ }
+@import './Header.scss'; 
+@import './generador.scss';
+@import './option.scss';
+@import './horario.scss';
+@import './mediaquieries.scss'

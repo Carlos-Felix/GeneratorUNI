@@ -1,6 +1,13 @@
 class cursoColor{
-    constructor(arrayNames){
-        this.arrayCurso = arrayNames
+    constructor(arrayCursos){
+        
+        let options = []
+        arrayCursos.map((d,index)=>{
+
+            options.push(d.Nombre)
+        })
+                
+        this.arrayCurso = options;
     }
     classCurso(nameCurso){
         let color = this.match(nameCurso);
@@ -25,6 +32,8 @@ class cursoColor{
                 return "curso9";
             case 9:
                 return "curso10";
+            default:
+                return "curso10"
         }
         
 
@@ -51,6 +60,8 @@ class cursoColor{
             case 8:
                 return "curso9";
             case 9:
+                return "curso10";
+            default:
                 return "curso10";
         }
     }

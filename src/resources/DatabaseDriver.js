@@ -1,17 +1,18 @@
 import GeneradorHorarios from './generador'
-import dataFC from '../data/database.json';
-import dataFIM from '../data/dbFIM.json'
+//import dataFC from '../data/database.json';
+import {CURSOS} from '../shared/cursos'
+//import dataFIM from '../data/dbFIM.json'
 
 class DatabaseDriver{
     constructor(){
         this.tempDatabase = []
-        this.database = dataFC
+        this.database = CURSOS
     }
 
     getAllFacultyNames = (faculty)=>{
         
         if(faculty === 'FC'){
-            this.changeDatabase(dataFC);
+            this.changeDatabase(CURSOS);
             return this.getAllNamesFromDatabase();
         }
         if(faculty === 'FIQT'){
@@ -23,8 +24,8 @@ class DatabaseDriver{
             return []
         }
         if(faculty === 'FIM'){
-            this.changeDatabase(dataFIM);
-            return this.getAllNamesFromDatabase();
+            //this.changeDatabase(dataFIM);
+            //return this.getAllNamesFromDatabase();
         }
         return []
             

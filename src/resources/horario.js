@@ -80,7 +80,7 @@ class Horario{
             }
             i = i+1;
         }
-        nomSecc = nomSecc + "Cruce Teoría: " + this.crucesTeoria+" " + "Cruce Practica: " + this.crucesPractica;
+        nomSecc = nomSecc + "Cruce Teoría: " + this.crucesTeoria+" Cruce Practica: " + this.crucesPractica;
         return [nomSecc,[this.crucesTeoria,this.crucesPractica],this.matrizHorario];
     }
 }
