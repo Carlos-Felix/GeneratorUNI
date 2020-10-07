@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/GeneratorUNI/static/css/main.584f9771.chunk.css",
-    "main.js": "/GeneratorUNI/static/js/main.370eb293.chunk.js",
-    "runtime-main.js": "/GeneratorUNI/static/js/runtime-main.7085cb5b.js",
-    "static/js/2.0e31ee8c.chunk.js": "/GeneratorUNI/static/js/2.0e31ee8c.chunk.js",
+    "main.css": "/GeneratorUNI/static/css/main.7b51a37f.chunk.css",
+    "main.js": "/GeneratorUNI/static/js/main.223eb4d0.chunk.js",
+    "runtime-main.js": "/GeneratorUNI/static/js/runtime-main.de568b2b.js",
+    "static/js/2.77d5a19b.chunk.js": "/GeneratorUNI/static/js/2.77d5a19b.chunk.js",
     "index.html": "/GeneratorUNI/index.html",
-    "precache-manifest.663d678e187345b0bf40a42d9bf8ca5d.js": "/GeneratorUNI/precache-manifest.663d678e187345b0bf40a42d9bf8ca5d.js",
+    "precache-manifest.33579b85436c8a94dd4b29abdb10e7af.js": "/GeneratorUNI/precache-manifest.33579b85436c8a94dd4b29abdb10e7af.js",
     "service-worker.js": "/GeneratorUNI/service-worker.js",
-    "static/js/2.0e31ee8c.chunk.js.LICENSE.txt": "/GeneratorUNI/static/js/2.0e31ee8c.chunk.js.LICENSE.txt",
-    "static/media/SelectionPanel.css": "/GeneratorUNI/static/media/logo-fl-white.144e6770.png"
+    "static/js/2.77d5a19b.chunk.js.LICENSE.txt": "/GeneratorUNI/static/js/2.77d5a19b.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/GeneratorUNI/static/media/logo-fl-white.144e6770.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7085cb5b.js",
-    "static/js/2.0e31ee8c.chunk.js",
-    "static/css/main.584f9771.chunk.css",
-    "static/js/main.370eb293.chunk.js"
+    "static/js/runtime-main.de568b2b.js",
+    "static/js/2.77d5a19b.chunk.js",
+    "static/css/main.7b51a37f.chunk.css",
+    "static/js/main.223eb4d0.chunk.js"
   ]
 }
