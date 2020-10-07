@@ -1,4 +1,5 @@
 {
+  "homepage": "https://carlos-felix.github.io/GeneratorUNI",
   "name": "generador",
   "version": "0.1.0",
   "private": true,
@@ -8,20 +9,24 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^3.1.2",
     "react-redux": "^7.2.1",
     "react-scripts": "3.4.3",
     "react-select": "^3.1.0",
-    "redux": "^4.0.5",
-    "redux-logger": "^3.0.6"
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
+    "builde": "GENERATE_SOURCEMAP=false react-scripts build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scss": "node-sass -o src/css/ src/css/",
     "css": "node-sass src/css/ -o src/css/",
-    "watch": "node-sass src/css/ -wo src/css/"
+    "watch": "node-sass src/css/ -wo src/css/",
+    "predeploy": "npm run builde",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1"
   }
 }

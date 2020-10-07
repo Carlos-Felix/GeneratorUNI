@@ -48,11 +48,11 @@ const customStyles = {
 
 
 
-const ControlPanel = (props)=>{
-    console.log("AKAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-    
-      
+const ControlPanel = (props)=>{ 
     /*
+      let date = new Date();
+date.toISOString()
+    
     const createList = ()=>{
       let options = [];
       console.log("Ordenando la listaaaaaaaaaaaaa")
@@ -68,14 +68,13 @@ const ControlPanel = (props)=>{
     */
     return(
       
-      <div className = "col-12 col-sm-5 col-md-5">
+      <div className = "control-panel col-12 col-sm-5 col-md-5">
         <Select
           options = {props.listaSelect}
           styles={customStyles} 
           onChange = {props.handleInput}
         >      
         </Select>
-        
         
       </div>
     )

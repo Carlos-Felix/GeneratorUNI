@@ -18,6 +18,17 @@ body {
   margin-top: 0px;
   margin-bottom: 0px; }
 
+.nav-bar p {
+  font-size: 0.5em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: right; }
+
+.control-panel p {
+  color: white;
+  font-size: 0.7em;
+  margin: 2px 0px; }
+
 .panel {
   height: 410px; }
 

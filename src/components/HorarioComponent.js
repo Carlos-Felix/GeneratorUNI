@@ -3,6 +3,7 @@ import cursoColor from '../resources/cursoColor';
 
 let key1 = null;
 let key2 = null;
+let key3 = 0;
 
 const Horario = (props)=>{
    
@@ -19,10 +20,6 @@ const Horario = (props)=>{
         }
     )
     */
-    console.log('Show horario')
-    console.log(props.showHorario)
-    console.log('Opcion seleccionada')
-    console.log(props.opcionSelect)
     if(/*props.render &&*/props.showHorario && props.opcionSelect != null){
         let classCurso = new cursoColor(props.cursosSeleccionados);
         return(
@@ -38,10 +35,10 @@ const Horario = (props)=>{
                     <div className = "day" >Horas</div>
                     <div className = "day" >LUNES</div>
                     <div className = "day" >MARTES</div>
-                    <div className = "day" >MIERCOLES</div>
+                    <div className = "day" >MIÉRCOLES</div>
                     <div className = "day" >JUEVES</div>
                     <div className = "day" >VIERNES</div>
-                    <div className = "day" >SABADO</div>
+                    <div className = "day" >SÁBADO</div>
                     
                     {
                         
@@ -77,18 +74,22 @@ const Horario = (props)=>{
                                                         }
                                                     }
                                                     return(
-                                                        <div className = "oc">
+                                                        <div key = {key2 + key1} className = "oc">
                                                             {
                                                                 dia.map((curso,index)=>{
                                                                     let claseCurso = classCurso.classCurso(curso[0]);
+                                                                    
                                                                     if(curso[2] === 1){
+                                                                        key3++;
                                                                         return (
-                                                                            <div key = {key2 + key1} className = {"teoria " + claseCurso}>{curso[0]} ({curso[1]})</div>
+                                                                            <div id = {key2 + key1 + key3.toString()} key = {key2 + key1 + key3.toString()} className = {"teoria " + claseCurso}>{curso[0]} ({curso[1]})</div>
                                                                         )
+
                                                                     }
                                                                     if(curso[2] === 2){
+                                                                        key3++;
                                                                         return (
-                                                                            <div key = {key2 + key1} className = {"practica " +  claseCurso}>{curso[0]} ({curso[1]})</div>
+                                                                            <div id = {key2 + key1 + key3.toString()} key = {key2 + key1 + key3.toString()} className = {"practica " +  claseCurso}>{curso[0]} ({curso[1]})</div>
                                                                         )
                                                                     }
                                                                 })

@@ -45,11 +45,11 @@ class Main extends Component{
 
     createList = ()=>{
       let options = [];
-      console.log("Ordenando la listaaaaaaaaaaaaa")
+      
       
       this.props.cursos.map((curso,index)=>{
         //console.log(d.Nombre)
-        console.log("esto=")
+        
         options.push({value :curso.Nombre, label : curso.Codigo + ' - ' + curso.Nombre})
       })
       return options;
@@ -81,12 +81,11 @@ class Main extends Component{
 
     handleVerHorario = ()=>{
         console.log('Generar')
-        console.log(this.props.opcionesHorarios[this.state.opcionSeleccionada])
         //this.setState({opcionSeleccionada: e.target.value})
     }
 
     triggerDelete = (nombre,index)=>{
-        console.log(nombre + ' ' + index)
+        
 
         //let selectedCursos = [...this.state.selectedCursos]
         
@@ -98,7 +97,7 @@ class Main extends Component{
         if(this.state.showHorario == true){
             this.setState({showHorario:false})
         }
-        console.log(this.props.cursosSeleccionados)
+        
     }
 
 	render(){
