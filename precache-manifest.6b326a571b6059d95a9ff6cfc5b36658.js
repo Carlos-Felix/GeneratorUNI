@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee3919a404deca07df972806e71d9085",
+    "revision": "315d9f545cf27a5962496ddfe8d2d3f5",
     "url": "/GeneratorUNI/index.html"
   },
   {
-    "revision": "ace0e43ccd617cd9d125",
+    "revision": "f4efc97f2722b8c0c3bc",
     "url": "/GeneratorUNI/static/css/main.751df504.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/GeneratorUNI/static/js/2.77d5a19b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ace0e43ccd617cd9d125",
-    "url": "/GeneratorUNI/static/js/main.28452edc.chunk.js"
+    "revision": "f4efc97f2722b8c0c3bc",
+    "url": "/GeneratorUNI/static/js/main.034772f2.chunk.js"
   },
   {
     "revision": "5ac386cb6f979065667d",
