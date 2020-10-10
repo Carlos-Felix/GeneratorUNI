@@ -4194,33 +4194,12 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 3,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 12, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 13, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 13, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 15, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    {   
-        "Codigo" : "CC301",
-        "Nombre" : "Programación Paralela",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 3,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 12, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 13, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 13, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 15, "Prioridad": 2}
+                            {"Dia": 2,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 10, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 9, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 10, "Prioridad": 2}
     
                         ]
                 }
@@ -4471,7 +4450,7 @@ export const CURSOS =
     },
     
     {   
-        "Codigo" : "CC462",
+        "Codigo" : "CC4P1",
         "Nombre" : "Sistemas Concurrentes a Distribuidos",
         "Secciones":
             [  
@@ -4479,18 +4458,37 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 2,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 20, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 11, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 13, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 7, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 9, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 7, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 9, "Prioridad": 2}
     
                         ]
                 }
             ]
     },
+    {   
+        "Codigo" : "CC411",
+        "Nombre" : "Seguridad en Sistemas informáticos",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 5,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 16, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 17, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 15, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 17, "Prioridad": 2}
     
+                        ]
+                }
+            ]
+    },
     {   
         "Codigo" : "CC471",
         "Nombre" : "Biología Computacional",
@@ -4517,7 +4515,7 @@ export const CURSOS =
         "Secciones":
             [  
                 {   
-                    "Seccion": "A",
+                    "Seccion": "A1",
                     "Horas":
                         [   
                             {"Dia": 1,"Hora": 15, "Prioridad": 1},
@@ -4528,16 +4526,9 @@ export const CURSOS =
                             {"Dia": 4,"Hora": 20, "Prioridad": 2}
     
                         ]
-                }
-            ]
-    },
-    {   
-        "Codigo" : "CC472",
-        "Nombre" : "Ingeniería del Software",
-        "Secciones":
-            [  
+                },
                 {   
-                    "Seccion": "A",
+                    "Seccion": "A2",
                     "Horas":
                         [   
                             {"Dia": 1,"Hora": 15, "Prioridad": 1},
@@ -4551,6 +4542,7 @@ export const CURSOS =
                 }
             ]
     },
+    
     {   
         "Codigo" : "CC321",
         "Nombre" : "Teoría de Autómatas Lenguajes y Computación",
@@ -5063,23 +5055,38 @@ export const CURSOS =
     
     {   
         "Codigo" : "CH033",
-        "Nombre" : "Metodología de la Investigación Científica",
+        "Nombre" : "Metodología de la Investigación",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 2,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 17, "Prioridad": 2}
+                            {"Dia": 2,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 20, "Prioridad": 2}
     
                         ]
                 }
             ]
     },
+    {   
+        "Codigo" : "CC4H1",
+        "Nombre" : "Metodología de la Investigación",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 2,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 20, "Prioridad": 2}
     
+                        ]
+                }
+            ]
+    },
     {   
         "Codigo" : "CH044",
         "Nombre" : "Realidad Nacional",
