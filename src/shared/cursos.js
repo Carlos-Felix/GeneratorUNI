@@ -830,10 +830,10 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 2,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 19, "Prioridad": 1},
                             {"Dia": 1,"Hora": 8, "Prioridad": 2},
                             {"Dia": 1,"Hora": 9, "Prioridad": 2}
     
@@ -847,19 +847,6 @@ export const CURSOS =
                             {"Dia": 2,"Hora": 11, "Prioridad": 1},
                             {"Dia": 4,"Hora": 10, "Prioridad": 1},
                             {"Dia": 4,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 9, "Prioridad": 2}
-    
-                        ]
-                },
-                {
-                    "Seccion": "C",
-                    "Horas":
-                        [   
-                            {"Dia": 1,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 11, "Prioridad": 1},
                             {"Dia": 1,"Hora": 8, "Prioridad": 2},
                             {"Dia": 1,"Hora": 9, "Prioridad": 2}
     
@@ -910,19 +897,6 @@ export const CURSOS =
                             {"Dia": 2,"Hora": 9, "Prioridad": 1},
                             {"Dia": 4,"Hora": 8, "Prioridad": 1},
                             {"Dia": 4,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 9, "Prioridad": 2}
-    
-                        ]
-                },
-                {
-                    "Seccion": "C",
-                    "Horas":
-                        [   
-                            {"Dia": 3,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 15, "Prioridad": 1},
                             {"Dia": 3,"Hora": 8, "Prioridad": 2},
                             {"Dia": 3,"Hora": 9, "Prioridad": 2}
     
@@ -1016,12 +990,12 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 6,"Hora": 9, "Prioridad": 2}
+                            {"Dia": 6,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 10, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 11, "Prioridad": 2}
     
                         ]
                 }
@@ -1079,6 +1053,28 @@ export const CURSOS =
                             {"Dia": 6,"Hora": 9, "Prioridad": 2},
                             {"Dia": 6,"Hora": 10, "Prioridad": 2},
                             {"Dia": 6,"Hora": 11, "Prioridad": 2}
+    
+                        ]
+                }
+    
+            ]
+    },
+
+    {   
+        "Codigo" : "CC531",
+        "Nombre" : "Análisis en Macrodatos",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 16, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 17, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 15, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 17, "Prioridad": 2}
     
                         ]
                 }
@@ -1206,8 +1202,8 @@ export const CURSOS =
                         [   
                             {"Dia": 2,"Hora": 16, "Prioridad": 1},
                             {"Dia": 2,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 13, "Prioridad": 2}
+                            {"Dia": 6,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 9, "Prioridad": 2}
     
                         ]
                 },
@@ -1218,8 +1214,8 @@ export const CURSOS =
                         [   
                             {"Dia": 2,"Hora": 10, "Prioridad": 1},
                             {"Dia": 2,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 13, "Prioridad": 2}
+                            {"Dia": 6,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 9, "Prioridad": 2}
     
                         ]
                 }
@@ -1256,8 +1252,8 @@ export const CURSOS =
                         [   
                             {"Dia": 2,"Hora": 14, "Prioridad": 1},
                             {"Dia": 2,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 11, "Prioridad": 1},
                             {"Dia": 5,"Hora": 14, "Prioridad": 1},
                             {"Dia": 5,"Hora": 15, "Prioridad": 1},
                             {"Dia": 1,"Hora": 18, "Prioridad": 2},
@@ -1284,8 +1280,8 @@ export const CURSOS =
                             {"Dia": 3,"Hora": 15, "Prioridad": 1},
                             {"Dia": 5,"Hora": 14, "Prioridad": 1},
                             {"Dia": 5,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 14, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 15, "Prioridad": 2}
     
                         ]
                 }
@@ -1305,8 +1301,8 @@ export const CURSOS =
                             {"Dia": 3,"Hora": 15, "Prioridad": 1},
                             {"Dia": 5,"Hora": 14, "Prioridad": 1},
                             {"Dia": 5,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 14, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 15, "Prioridad": 2}
     
                         ]
                 }
@@ -1344,37 +1340,16 @@ export const CURSOS =
                             {"Dia": 5,"Hora": 19, "Prioridad": 2}
     
                         ]
-                }
-    
-            ]
-    },
-    {   
-        "Codigo" : "CM261",
-        "Nombre" : "Algebra Lineal I",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 19, "Prioridad": 2}
-    
-                        ]
                 },
     
                 {   
-                    "Seccion": "B",
+                    "Seccion": "C",
                     "Horas":
                         [   
-                            {"Dia": 2,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 19, "Prioridad": 1},
                             {"Dia": 5,"Hora": 18, "Prioridad": 2},
                             {"Dia": 5,"Hora": 19, "Prioridad": 2}
     
@@ -1383,6 +1358,7 @@ export const CURSOS =
     
             ]
     },
+    
     {   
         "Codigo" : "CM2B1",
         "Nombre" : "Algebra Lineal II",
@@ -1414,39 +1390,19 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 11, "Prioridad": 1},
                             {"Dia": 4,"Hora": 18, "Prioridad": 2},
                             {"Dia": 4,"Hora": 19, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 15, "Prioridad": 2}
+                            {"Dia": 5,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 9, "Prioridad": 2}
     
                         ]
                 }
     
             ]
     },
-    {   
-        "Codigo" : "CM298",
-        "Nombre" : "Procesador de Texto y Programación",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 19, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 15, "Prioridad": 2}
     
-                        ]
-                }
-    
-            ]
-    },
     
     {   
         "Codigo" : "CM3C1",
@@ -1471,28 +1427,6 @@ export const CURSOS =
             ]
     },
     
-    {   
-        "Codigo" : "CM313",
-        "Nombre" : "Análisis En Rn",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 1,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 13, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 15, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
     
     {   
         "Codigo" : "CM3I2",
@@ -1515,28 +1449,7 @@ export const CURSOS =
     
             ]
     },
-    {   
-        "Codigo" : "CM314",
-        "Nombre" : "Topología",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 1,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 11, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    
+        
     {   
         "Codigo" : "CM3A1",
         "Nombre" : "Análisis Complejo",
@@ -1560,27 +1473,6 @@ export const CURSOS =
     },
     
     {   
-        "Codigo" : "CM312",
-        "Nombre" : "Análisis Complejo",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 19, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    {   
         "Codigo" : "CM2G2",
         "Nombre" : "Introducción a las Ecuaciones Diferenciales Ordinarias",
         "Secciones":
@@ -1601,32 +1493,10 @@ export const CURSOS =
     
             ]
     },
-
-    {   
-        "Codigo" : "CM321",
-        "Nombre" : "Introducción a las Ecuaciones Diferenciales Ordinarias",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 1,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 19, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    
+   
     
     {   
-        "Codigo" : "CM322",
+        "Codigo" : "CM4G2",
         "Nombre" : "Ecuaciones Diferenciales Parciales I",
         "Secciones":
             [  
@@ -1707,42 +1577,20 @@ export const CURSOS =
     },
     
     {   
-        "Codigo" : "CM342",
-        "Nombre" : "Teoría Local de Superficies",
+        "Codigo" : "CM4E1",
+        "Nombre" : "Programación Lineal y flujo en redes",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 17, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    
-    {   
-        "Codigo" : "CM355",
-        "Nombre" : "Programación Lineal",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 11, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 14, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 15, "Prioridad": 2}
     
                         ]
                 }
@@ -1764,37 +1612,15 @@ export const CURSOS =
                             {"Dia": 4,"Hora": 17, "Prioridad": 1},
                             {"Dia": 5,"Hora": 16, "Prioridad": 1},
                             {"Dia": 5,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 19, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 17, "Prioridad": 2}
     
                         ]
                 }
     
             ]
     },
-    
-    {   
-        "Codigo" : "CM361",
-        "Nombre" : "Estructuras Algebraicas",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 4,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 19, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    
+        
     
     {   
         "Codigo" : "CM394",
@@ -1805,10 +1631,10 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 11, "Prioridad": 1},
                             {"Dia": 4,"Hora": 14, "Prioridad": 2},
                             {"Dia": 4,"Hora": 15, "Prioridad": 2}
     
@@ -1832,39 +1658,18 @@ export const CURSOS =
                             {"Dia": 2,"Hora": 15, "Prioridad": 1},
                             {"Dia": 4,"Hora": 14, "Prioridad": 1},
                             {"Dia": 4,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 13, "Prioridad": 2}
+                            {"Dia": 4,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 9, "Prioridad": 2}
     
                         ]
                 }
     
             ]
     },
-    {   
-        "Codigo" : "CM411",
-        "Nombre" : "Teoría de la Medida",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 13, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    
+        
     
     {   
-        "Codigo" : "CM413",
+        "Codigo" : "CM4C1",
         "Nombre" : "Análisis Funcional I",
         "Secciones":
             [  
@@ -1876,31 +1681,29 @@ export const CURSOS =
                             {"Dia": 3,"Hora": 19, "Prioridad": 1},
                             {"Dia": 4,"Hora": 18, "Prioridad": 1},
                             {"Dia": 4,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 19, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 20, "Prioridad": 2}
     
                         ]
                 }
     
             ]
     },
-    
-    
     {   
-        "Codigo" : "CM414",
-        "Nombre" : "Análisis Funcional II",
+        "Codigo" : "CM4H1",
+        "Nombre" : "Teoría de la Probabilidad",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 17, "Prioridad": 2}
+                            {"Dia": 2,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 17, "Prioridad": 2}
     
                         ]
                 }
@@ -1909,10 +1712,9 @@ export const CURSOS =
     },
     
     
-    
     {   
-        "Codigo" : "CM421",
-        "Nombre" : "Ecuaciones Diferenciales Ordinarias I",
+        "Codigo" : "CM4C2",
+        "Nombre" : "Análisis Funcional II",
         "Secciones":
             [  
                 {   
@@ -1923,14 +1725,15 @@ export const CURSOS =
                             {"Dia": 2,"Hora": 17, "Prioridad": 1},
                             {"Dia": 4,"Hora": 16, "Prioridad": 1},
                             {"Dia": 4,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 9, "Prioridad": 2}
+                            {"Dia": 3,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 17, "Prioridad": 2}
     
                         ]
                 }
     
             ]
     },
+    
     
     
     {   
@@ -1954,6 +1757,7 @@ export const CURSOS =
     
             ]
     },
+    
     {   
         "Codigo" : "CM424",
         "Nombre" : "Introducción a los Sistemas Dinámicos",
@@ -1967,8 +1771,8 @@ export const CURSOS =
                             {"Dia": 1,"Hora": 9, "Prioridad": 1},
                             {"Dia": 3,"Hora": 8, "Prioridad": 1},
                             {"Dia": 3,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 9, "Prioridad": 2}
+                            {"Dia": 5,"Hora": 14, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 15, "Prioridad": 2}
     
                         ]
                 }
@@ -1978,8 +1782,8 @@ export const CURSOS =
     
     
     {   
-        "Codigo" : "CM431",
-        "Nombre" : "Análisis Numérico II",
+        "Codigo" : "CM5F1",
+        "Nombre" : "Análisis y Modelamiento Numérico II",
         "Secciones":
             [  
                 {   
@@ -2001,7 +1805,7 @@ export const CURSOS =
     
     
     {   
-        "Codigo" : "CM454",
+        "Codigo" : "CM4E2",
         "Nombre" : "Programación No Lineal",
         "Secciones":
             [  
@@ -2009,21 +1813,41 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 3,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 12, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 12, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 17, "Prioridad": 2}
+                            {"Dia": 5,"Hora": 16, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 17, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 7, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 17, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 18, "Prioridad": 2}
     
                         ]
                 }
     
             ]
     },
+    {   
+        "Codigo" : "CM5H1",
+        "Nombre" : "Introducción a los Procesos Estocásticos",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 2,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 9, "Prioridad": 2}
     
+                        ]
+                }
+    
+            ]
+    },
     
     {   
         "Codigo" : "CM474",
@@ -2034,12 +1858,12 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 2}
+                            {"Dia": 2,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 9, "Prioridad": 2}
     
                         ]
                 }
@@ -2047,10 +1871,9 @@ export const CURSOS =
             ]
     },
     
-    
     {   
-        "Codigo" : "CM082",
-        "Nombre" : "Economía Matemática I",
+        "Codigo" : "CM0E7",
+        "Nombre" : "Tópicos de la Investigación III",
         "Secciones":
             [  
                 {   
@@ -2059,21 +1882,19 @@ export const CURSOS =
                         [   
                             {"Dia": 2,"Hora": 10, "Prioridad": 1},
                             {"Dia": 2,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 13, "Prioridad": 2}
+                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 14, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 15, "Prioridad": 2}
     
                         ]
                 }
     
             ]
-    },
-    
-    
+    },    
     {   
-        "Codigo" : "CM072",
-        "Nombre" : "Tópicos de la Investigación I",
+        "Codigo" : "CM074",
+        "Nombre" : "Tópicos de la Investigación III",
         "Secciones":
             [  
                 {   
@@ -2093,94 +1914,7 @@ export const CURSOS =
             ]
     },
 
-    {   
-        "Codigo" : "CM073",
-        "Nombre" : "Tópicos de la Investigación II",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 2}
     
-                        ]
-                }
-    
-            ]
-    },
-
-    {   
-        "Codigo" : "CM018",
-        "Nombre" : "Procesos Estocásticos",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 11, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    {   
-        "Codigo" : "CM060",
-        "Nombre" : "Estructuras Algebraicas I",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 6,"Hora": 11, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-    
-    {   
-        "Codigo" : "CM0E8",
-        "Nombre" : "Programación Entera",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },   
     
     {   
         "Codigo" : "BQU01",
@@ -3212,6 +2946,23 @@ export const CURSOS =
             ]
     },
 
+    {   
+        "Codigo" : "CC511",
+        "Nombre" : "Proyecto de Tesis II",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A1",
+                    "Horas":
+                        [   
+                            {"Dia": 2,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 17, "Prioridad": 2}
+                        ]
+                }
+    
+            ]
+    },
+
     
     {   
         "Codigo" : "CQ013",
@@ -3942,28 +3693,6 @@ export const CURSOS =
                     "Seccion": "B",
                     "Horas":
                         [   
-                            {"Dia": 6,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 9, "Prioridad": 2},
-                            {"Dia": 6,"Hora": 10, "Prioridad": 2}
-    
-                        ]
-                },
-    
-                {   
-                    "Seccion": "C",
-                    "Horas":
-                        [   
-                            {"Dia": 6,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 6,"Hora": 13, "Prioridad": 2}
-    
-                        ]
-                },
-    
-                {   
-                    "Seccion": "D",
-                    "Horas":
-                        [   
                             {"Dia": 6,"Hora": 11, "Prioridad": 1},
                             {"Dia": 6,"Hora": 12, "Prioridad": 2},
                             {"Dia": 6,"Hora": 13, "Prioridad": 2}
@@ -3972,28 +3701,7 @@ export const CURSOS =
                 },
     
                 {   
-                    "Seccion": "E",
-                    "Horas":
-                        [   
-                            {"Dia": 6,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 6,"Hora": 17, "Prioridad": 2}
-    
-                        ]
-                },
-    
-                {   
-                    "Seccion": "F",
-                    "Horas":
-                        [   
-                            {"Dia": 6,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 6,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 6,"Hora": 17, "Prioridad": 2}
-    
-                        ]
-                },
-                {   
-                    "Seccion": "G",
+                    "Seccion": "C",
                     "Horas":
                         [   
                             {"Dia": 6,"Hora": 15, "Prioridad": 1},
@@ -4228,28 +3936,6 @@ export const CURSOS =
     
             ]
     },
-
-    {   
-        "Codigo" : "CC331",
-        "Nombre" : "Base de Datos",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 13, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 15, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
     
     {   
         "Codigo" : "CC3M2",
@@ -4283,12 +3969,12 @@ export const CURSOS =
                     "Seccion": "A1",
                     "Horas":
                         [   
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 11, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 13, "Prioridad": 2}
+                            {"Dia": 3,"Hora": 7, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 9, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 10, "Prioridad": 2}
     
                         ]
                 },
@@ -4296,44 +3982,9 @@ export const CURSOS =
                     "Seccion": "A2",
                     "Horas":
                         [   
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 9, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 10, "Prioridad": 2}
-    
-                        ]
-                }
-    
-            ]
-    },
-
-    {   
-        "Codigo" : "CC361",
-        "Nombre" : "Sistemas Operativos",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A1",
-                    "Horas":
-                        [   
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 11, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 12, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 13, "Prioridad": 2}
-    
-                        ]
-                },
-                {   
-                    "Seccion": "A2",
-                    "Horas":
-                        [   
-                            {"Dia": 4,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 7, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
                             {"Dia": 5,"Hora": 8, "Prioridad": 2},
                             {"Dia": 5,"Hora": 9, "Prioridad": 2},
                             {"Dia": 5,"Hora": 10, "Prioridad": 2}
@@ -4408,7 +4059,7 @@ export const CURSOS =
     },
     
     {   
-        "Codigo" : "CC441",
+        "Codigo" : "CC421",
         "Nombre" : "Inteligencia Artificial",
         "Secciones":
             [  
@@ -4419,9 +4070,9 @@ export const CURSOS =
                             {"Dia": 3,"Hora": 18, "Prioridad": 1},
                             {"Dia": 3,"Hora": 19, "Prioridad": 1},
                             {"Dia": 3,"Hora": 20, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 19, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 20, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 15, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 17, "Prioridad": 2}
     
                         ]
                 }
@@ -4464,6 +4115,26 @@ export const CURSOS =
                             {"Dia": 2,"Hora": 7, "Prioridad": 2},
                             {"Dia": 2,"Hora": 8, "Prioridad": 2},
                             {"Dia": 2,"Hora": 9, "Prioridad": 2}
+    
+                        ]
+                }
+            ]
+    },
+    {   
+        "Codigo" : "CC451",
+        "Nombre" : "Interacción Humano-Computador",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 1,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 20, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 21, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 21, "Prioridad": 2}
     
                         ]
                 }
@@ -4542,7 +4213,47 @@ export const CURSOS =
                 }
             ]
     },
+    {   
+        "Codigo" : "CC3S2",
+        "Nombre" : "Desarrollo de Software",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 1,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 12, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 9, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 10, "Prioridad": 2}
     
+                        ]
+                }
+            ]
+    },
+
+    {   
+        "Codigo" : "CC521",
+        "Nombre" : "Programación Evolutiva",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 4,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 20, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 21, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 9, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 10, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 11, "Prioridad": 2}
+    
+                        ]
+                }
+            ]
+    },
     {   
         "Codigo" : "CC321",
         "Nombre" : "Teoría de Autómatas Lenguajes y Computación",
@@ -4552,39 +4263,19 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 3,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 20, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 19, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 20, "Prioridad": 2}
+                            {"Dia": 2,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 20, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 21, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 21, "Prioridad": 2}
     
                         ]
                 }
     
             ]
     },
-    {   
-        "Codigo" : "CC342",
-        "Nombre" : "Teoría de Autómatas Lenguajes y Computación",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 3,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 20, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 19, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 20, "Prioridad": 2}
     
-                        ]
-                }
-    
-            ]
-    },
     {   
         "Codigo" : "CC312",
         "Nombre" : "Administración de Redes",
@@ -4606,21 +4297,22 @@ export const CURSOS =
             ]
     },
 
+    
     {   
-        "Codigo" : "CC481",
-        "Nombre" : "Administración de Redes",
+        "Codigo" : "CC431",
+        "Nombre" : "Computación Gráfica",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 15, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 16, "Prioridad": 2}
+                            {"Dia": 4,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 9, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 10, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 11, "Prioridad": 2}
     
                         ]
                 }
@@ -4671,7 +4363,119 @@ export const CURSOS =
                 }
             ]
     },
+
+    {   
+        "Codigo" : "CC0S2",
+        "Nombre" : "Modelamiento y Simulación",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 3,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 20, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 20, "Prioridad": 2}
+                 
+                 
     
+                        ]
+                }
+            ]
+    },
+    {   
+        "Codigo" : "CC422",
+        "Nombre" : "Infraestructuras de Computación",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 1,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 20, "Prioridad": 2}
+                 
+                 
+    
+                        ]
+                }
+            ]
+    },
+    {   
+        "Codigo" : "CC581",
+        "Nombre" : "Infraestructuras de Computación",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 1,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 20, "Prioridad": 2}
+                 
+                 
+    
+                        ]
+                }
+            ]
+    },
+
+    {   
+        "Codigo" : "CC432",
+        "Nombre" : "Robótica",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 2,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 20, "Prioridad": 2}
+                 
+                 
+    
+                        ]
+                }
+            ]
+    },
+
+    {   
+        "Codigo" : "CC442",
+        "Nombre" : "Minería de Datos",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 2,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 14, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 15, "Prioridad": 2},
+                            {"Dia": 4,"Hora": 16, "Prioridad": 2}
+                 
+                 
+    
+                        ]
+                }
+            ]
+    },
     {   
         "Codigo" : "CC571",
         "Nombre" : "Sistemas Operativos Avanzados",
@@ -4731,22 +4535,43 @@ export const CURSOS =
                 }
             ]
     },
-    
+
     {   
-        "Codigo" : "CC0F6",
-        "Nombre" : "Tópicos Especiales de Ciencia de la Computación III",
+        "Codigo" : "CC0F4",
+        "Nombre" : "Tópicos de Ciencia de la Computación I",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 5,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 20, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 19, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 20, "Prioridad": 2}
+                            {"Dia": 4,"Hora": 17, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 6,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 17, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 6,"Hora": 19, "Prioridad": 2}
+    
+                        ]
+                }
+            ]
+    },
+    
+    {   
+        "Codigo" : "CC0F6",
+        "Nombre" : "Tópicos de Ciencia de la Computación III",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 1,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 20, "Prioridad": 2}
     
                         ]
                 }
@@ -4754,43 +4579,65 @@ export const CURSOS =
     },
     {   
         "Codigo" : "CC003",
-        "Nombre" : "Tópicos Especiales de Ciencia de la Computación III",
+        "Nombre" : "Tópicos de Ciencia de la Computación III",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 5,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 20, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 19, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 20, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 20, "Prioridad": 2}
     
                         ]
                 }
             ]
     },
     {   
-        "Codigo" : "CC005",
-        "Nombre" : "Tópicos Especiales de Ciencia de la Computación V",
+        "Codigo" : "CC0F7",
+        "Nombre" : "Tópicos de Ciencia de la Computación IV",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 2,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 9, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 10, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 14, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 15, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 16, "Prioridad": 2}
     
                         ]
                 }
             ]
     },
     
+    {   
+        "Codigo" : "CC0D1",
+        "Nombre" : "Deep Learning en Visión Artificial",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 12, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 8, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 9, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 10, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 11, "Prioridad": 2}
+    
+                        ]
+                }
+            ]
+    },
     {   
         "Codigo" : "CC232",
         "Nombre" : "Algoritmos y Estructuras de Datos",
@@ -4840,15 +4687,6 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 5,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 19, "Prioridad": 1}
-    
-                        ]
-                },
-                {   
-                    "Seccion": "B",
-                    "Horas":
-                        [   
                             {"Dia": 6,"Hora": 10, "Prioridad": 1},
                             {"Dia": 6,"Hora": 11, "Prioridad": 1}
     
@@ -4866,9 +4704,9 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 5,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 5,"Hora": 19, "Prioridad": 2},
-                            {"Dia": 5,"Hora": 20, "Prioridad": 2}
+                            {"Dia": 5,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 12, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 13, "Prioridad": 2}
     
                         ]
                 },
@@ -4877,9 +4715,19 @@ export const CURSOS =
                     "Seccion": "B",
                     "Horas":
                         [   
-                            {"Dia": 3,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 17, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 18, "Prioridad": 2}
+                            {"Dia": 3,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 17, "Prioridad": 2}
+    
+                        ]
+                },
+                {   
+                    "Seccion": "C",
+                    "Horas":
+                        [   
+                            {"Dia": 5,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 19, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 20, "Prioridad": 2}
     
                         ]
                 }
@@ -4892,7 +4740,7 @@ export const CURSOS =
         "Secciones":
             [  
                 {   
-                    "Seccion": "A",
+                    "Seccion": "B",
                     "Horas":
                         [   
                             {"Dia": 1,"Hora": 16, "Prioridad": 1},
@@ -4903,11 +4751,11 @@ export const CURSOS =
                         ]
                 },
                 {   
-                    "Seccion": "B",
+                    "Seccion": "C",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 17, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 14, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 15, "Prioridad": 1},
                             {"Dia": 2,"Hora": 17, "Prioridad": 2},
                             {"Dia": 2,"Hora": 18, "Prioridad": 2}
     
@@ -4999,8 +4847,8 @@ export const CURSOS =
                         [   
                             {"Dia": 2,"Hora": 18, "Prioridad": 1},
                             {"Dia": 2,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 19, "Prioridad": 2}
+                            {"Dia": 2,"Hora": 20, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 21, "Prioridad": 2}
     
                         ]
                 }
@@ -5104,7 +4952,40 @@ export const CURSOS =
                 }
             ]
     },
+    {   
+        "Codigo" : "CQ401",
+        "Nombre" : "Microbiología",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A1",
+                    "Horas":
+                        [   
+                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 10, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 11, "Prioridad": 2}
     
+                        ]
+                },
+    
+                {   
+                    "Seccion": "A2",
+                    "Horas":
+                        [   
+                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 10, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 11, "Prioridad": 2}
+    
+                        ]
+                }
+            ]
+    },
     {   
         "Codigo" : "CH061",
         "Nombre" : "Biología",
@@ -5114,46 +4995,18 @@ export const CURSOS =
                     "Seccion": "A1",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 11, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 12, "Prioridad": 2}
+                            {"Dia": 4,"Hora": 16, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 17, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 18, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 19, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 14, "Prioridad": 2},
+                            {"Dia": 5,"Hora": 15, "Prioridad": 2}
     
                         ]
                 },
     
                 {   
                     "Seccion": "A2",
-                    "Horas":
-                        [   
-                            {"Dia": 1,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 11, "Prioridad": 2}
-    
-                        ]
-                },
-    
-                {   
-                    "Seccion": "B1",
-                    "Horas":
-                        [   
-                            {"Dia": 4,"Hora": 16, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 18, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 19, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 15, "Prioridad": 2}
-    
-                        ]
-                },
-    
-                {   
-                    "Seccion": "B2",
                     "Horas":
                         [   
                             {"Dia": 4,"Hora": 16, "Prioridad": 1},
@@ -5219,26 +5072,6 @@ export const CURSOS =
                         ]
                 }
             ]
-    },
-    
-    {   
-        "Codigo" : "CL003",
-        "Nombre" : "Inglés II",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 17, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 18, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 17, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 18, "Prioridad": 2}
-    
-                        ]
-                }
-            ]
     }
-    
     
     ]
