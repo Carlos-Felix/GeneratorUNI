@@ -128,46 +128,55 @@ body {
 .btn-agregar {
   background: green; }
 
-/*
-.donate-now {
-  list-style-type: none;
-  margin: 25px 0 0 0;
-  padding: 0;
-}
+.modal-cursos {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
 
-.donate-now li {
-  float: left;
-  margin: 0 5px 0 0;
-  width: 100px;
-  height: 40px;
-  position: relative;
-}
+.modal-cursos textarea {
+  width: 80%;
+  background: red;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  height: 300px; }
 
-.donate-now label,
-.donate-now input {
-  display: block;
-}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
 
-.donate-now input[type="radio"] {
-  opacity: 0.01;
-  z-index: 100;
-}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
 
-.donate-now input[type="radio"]:checked+label,
-.Checked+label {
-  background: yellow;
-}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
 
-.donate-now label {
-  padding: 5px;
-  border: 1px solid #CCC;
-  cursor: pointer;
-  z-index: 90;
-}
-
-.donate-now label:hover {
-  background: #DDD;
-}*/
 .info-option {
   background: #066886;
   margin: 3px 15px 3px 15px;

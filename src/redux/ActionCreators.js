@@ -28,9 +28,18 @@ export const deleteCurso = (index) => ({
 	payload: index
 })
 
+export const updateCreated = (updated) => ({
+  type: ActionTypes.UPDATE_CREATED,
+  payload: updated
+})
 
+export const chageToCreated = () => ({
+  type: ActionTypes.CHANGE_TO_CRATED
+})
 
-
+export const changeToPredef = () => ({
+  type: ActionTypes.CHANGE_TO_PREDEF
+})
 
 
 

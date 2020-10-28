@@ -20,7 +20,7 @@ const OptionPanel = (props)=>{
             return(
                 
                     <div id = "info" className = "d-flex justify-content-between info-option">
-                        <div>></div><a href = "https://fourleaves.org.pe/" target="_blank">visítanos</a>
+                        <div></div><a href = "https://fourleaves.org.pe/" target="_blank">visítanos</a>
                     </div>
                 
             )

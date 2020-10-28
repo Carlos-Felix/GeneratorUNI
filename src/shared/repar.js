@@ -1,3 +1,17 @@
-import {QUIMICA} from './quimica';
+import { CC } from './cc';
+import { CH } from './ch';
+import { IF } from './ingFisica';
+import { MT } from './matematica';
+import convert from '../resources/javas';
 
-export const CURSOS =  QUIMICA; 
+
+const cArray = [
+  CC,
+  CH,
+  IF,
+  MT
+];
+
+const ARRAYCURSOS = [].concat(...cArray);
+
+export const CURSOS =  convert(ARRAYCURSOS)

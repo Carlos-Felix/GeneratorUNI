@@ -5,9 +5,10 @@ import ReactGa from 'react-ga';
 import Main from './components/MainComponent';
 
 import { Provider } from 'react-redux';
-import { ConfigureStore } from './redux/configureStore';
+import { store,persistor } from './redux/configureStore';
 
-const store = ConfigureStore();
+import { PersistGate } from 'redux-persist/integration/react';
+//const store = ConfigureStore();
 
       
 class App extends React.Component{
@@ -18,9 +19,11 @@ class App extends React.Component{
   render(){
     return (
       <Provider store={store}>
+        <PersistGate persistor = {persistor}>
           <div className="App">
             <Main />
           </div>
+        </PersistGate>
      </Provider>
   )
   }

@@ -2,12 +2,6 @@ import React from 'react'
 import Select from 'react-select';
 //import {CURSOS} from '../shared/cursos'
 
-const cursosCreados = [
-  {
-    codigo: "3232",
-    nombre: "este es su nombre"
-  }
-]
 
 const customStyles = {
   option: (provided, state) => ({
@@ -76,8 +70,12 @@ date.toISOString()
   constructor(props){
     super(props)
     this.state = {
-      modal: "off"
+      modal: "off",
+      textAreaValue: this.props.cursosCreados
+
     }
+    //console.log("Cursis constructor:")
+    //console.log(this.props.cursos)
   } 
   handleModal = () => {
     if(this.state.modal == "off"){
@@ -88,13 +86,42 @@ date.toISOString()
       }
     }
   }
+
+  handleChange = (e) => {
+    this.setState({textAreaValue: e.target.value});
+    console.log(this.state.textAreaValue)
+  }
+  handleSubmit = (e) => {
+    this.props.handleSubmit(JSON.parse(this.state.textAreaValue));
+    e.preventDefault();
+  }
+
+ createList = ()=>{                                                                                                  
+         let options = [];                                                                                                 
+          console.log("Estos son los cursos")                                                                                                                   
+//          console.log(this.props.cursos)                                                                                          
+         this.props.cursos.map((curso,index)=>{                                                                            
+         //console.log(d.Nombre)                                                                                         
+                                                                                                                         
+         options.push({value :curso.Codigo, label : curso.Codigo + ' - ' + curso.Nombre})                                
+       })                                                                                                                
+       return options;                                                                                                   
+     }   
   showModal = ()=>{
     if(this.state.modal == "on"){
       return(
         <div className = "modal-cursos">
-          <textarea id="w3review" name="w3review" rows="4" cols="40">
-            {JSON.stringify(cursosCreados,undefined,2)}
-          </textarea>
+          <div className = "modal-content">
+            <span class="close" onClick = {this.handleModal}>&times;</span>
+            <form onSubmit = {this.handleSubmit}>
+            
+              <textarea id="w3review" name="w3review" onChange = {this.handleChange} >
+                {JSON.stringify(this.props.cursosCreados,undefined,2)}
+              </textarea>
+              <input type="submit" value="Submit" />
+            
+            </form>
+          </div>
         </div>
       )
     }
@@ -104,10 +131,10 @@ date.toISOString()
       
       <div className = "control-panel col-12 col-sm-5 col-md-5">
         <div class = "group">
-            <input id = "este" type = "radio" name = "op" checked/>
-          <label for = "este">Crear un curso</label>
+            <input id = "este" type = "radio" onClick = {this.chageToCreated} name = "op" checked/>
+          <label for = "este" onClick = {this.props.chageToCreated}>Crear un curso</label>
             <input id = "otro" type = "radio" name = "op"/>
-            <label for = "otro">esstte botonaso</label> 
+            <label for = "otro" onClick = {this.props.changeToPredef}>esstte botonaso</label> 
         </div>
         <div className = "btn-agregar" onClick = {this.handleModal}>agregar</div>
         {
@@ -115,7 +142,7 @@ date.toISOString()
         }
 
         <Select
-          options = {this.props.listaSelect}
+          options = {this.createList()}
           styles={customStyles} 
           onChange = {this.props.handleInput}
         >      

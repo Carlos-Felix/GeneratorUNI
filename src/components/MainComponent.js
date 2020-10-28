@@ -3,7 +3,7 @@ import Header from './HeaderComponent';
 import Generador from './GeneradorComponent';
 import OptionPanel from './OptionPanel';
 
-import {addCurso,addOpcionesHorario,resetOpcionesHorario,deleteCurso} from '../redux/ActionCreators'
+import {addCurso,addOpcionesHorario,resetOpcionesHorario,deleteCurso, changeToPredef, chageToCreated, updateCreated} from '../redux/ActionCreators'
 
 import { connect } from 'react-redux';
 
@@ -18,14 +18,18 @@ const mapDispatchToProps = dispatch => ({
   agregarCurso: (curso) => dispatch(addCurso(curso)),
   agregarOpciones: (opciones) => dispatch(addOpcionesHorario(opciones)),
   resetOpciones: () => dispatch(resetOpcionesHorario()),
-  deleteCurso: (index) => dispatch(deleteCurso(index))
+  deleteCurso: (index) => dispatch(deleteCurso(index)),
+  changeToPredef: () => dispatch(changeToPredef()),
+  chageToCreated: () => dispatch(chageToCreated()),
+  updateCreated: (updated) => dispatch(updateCreated(updated))
 });
 
 const mapStateToProps = state => {
   return {
     cursos: state.cursos.cursos,
     cursosSeleccionados: state.cursos.cursosSeleccionados,
-    opcionesHorarios: state.cursos.opcionesHorarios
+    opcionesHorarios: state.cursos.opcionesHorarios,
+    cursosCreados: state.cursos.cursosCreados
   }
 }
 
@@ -40,28 +44,13 @@ class Main extends Component{
             showHorario: false
         }
         this.DatabaseDriver = new DatabaseDriver();
-        this.listaSelect = this.createList()
+        console.log("Cursos")
+       console.log(this.props.cursos)
     }
 
-    createList = ()=>{
-      let options = [];
-      
-      
-      this.props.cursos.map((curso,index)=>{
-        //console.log(d.Nombre)
-        
-        options.push({value :curso.Codigo, label : curso.Codigo + ' - ' + curso.Nombre})
-      })
-      return options;
-    }
-    
 
     handleInput = (e)=>{
-
-        this.props.agregarCurso(this.DatabaseDriver.findbyNombreInDatabase({Codigo: e.value}))
-
-        //const a = GeneradorHorarios(this.props.cursosSeleccionados)
-        //this.props.agregarOpciones(a)
+        this.props.agregarCurso(this.props.cursos.get(e.value))
         if(this.state.showHorario == true){
             this.setState({showHorario:false})
         }
@@ -84,15 +73,23 @@ class Main extends Component{
         //this.setState({opcionSeleccionada: e.target.value})
     }
 
-    triggerDelete = (nombre,index)=>{
-        
+    updateCreated = (updated) => {
+      console.log("Aqui updated")
+      console.log(updated)
+      this.props.updateCreated(updated)
+    }
 
-        //let selectedCursos = [...this.state.selectedCursos]
-        
-        //selectedCursos.splice(index, 1);
-        //localStorage.setItem("selectedCursos", JSON.stringify(selectedCursos));
-        //console.log(selectedCursos)
-        //this.setState({selectedCursos: selectedCursos,focusAble: false})
+    chageToCreated = () => {
+      this.props.chageToCreated()
+
+    }
+
+    changeToPredef = () => {
+      this.props.changeToPredef()
+    }
+
+    triggerDelete = (nombre,index)=>{
+
         this.props.deleteCurso(index);
         if(this.state.showHorario == true){
             this.setState({showHorario:false})
@@ -105,27 +102,28 @@ class Main extends Component{
             <div>
             <Header/>
 		  <div className = "container">
-		    <Generador 
-		    	listaSelect = {this.listaSelect}
-		    	handleInput = {this.handleInput}
-		    	cursosSeleccionados = {this.props.cursosSeleccionados}
-                handleGenerar = {this.handleGenerar}
-                triggerDelete = {this.triggerDelete}
+		     <Generador 
+		    	  cursos = {this.props.cursos.getSortValues()}
+		    	  handleInput = {this.handleInput}
+		    	  cursosSeleccionados = {this.props.cursosSeleccionados}
+            handleGenerar = {this.handleGenerar}
+            triggerDelete = {this.triggerDelete}
+            changeToPredef = {this.changeToPredef}
+            chageToCreated = {this.chageToCreated}
+            handleSubmit = {this.updateCreated}
+            cursosCreados = {this.props.cursosCreados}
 		    	/>
-            <OptionPanel 
-                listOpc = {this.props.opcionesHorarios}
-                handleSelectOpcion = {this.handleSelectOpcion}
-                handleVerHorario = {this.handleVerHorario}
-                />
-            <Horario
-                //render = {this.state.rendeHorario} 
-                //focusAble = {this.state.focusAble} 
-                opcionSelect = {this.props.opcionesHorarios[this.state.opcionSeleccionada]} 
-                
-                cursosSeleccionados = {this.props.cursosSeleccionados}
-                array = {this.props.opcionesHorarios}
-                showHorario = {this.state.showHorario}
-            />
+         <OptionPanel 
+            listOpc = {this.props.opcionesHorarios}
+            handleSelectOpcion = {this.handleSelectOpcion}
+            handleVerHorario = {this.handleVerHorario}
+          />
+         <Horario
+            opcionSelect = {this.props.opcionesHorarios[this.state.opcionSeleccionada]} 
+            cursosSeleccionados = {this.props.cursosSeleccionados}
+            array = {this.props.opcionesHorarios}
+            showHorario = {this.state.showHorario}
+          />
 		  </div>
           </div>
 	)

@@ -59,10 +59,14 @@ const Generador = (props) => {
         return(
             <div className = "row justify-content-between">                 
                 <ControlPanel 
-                	listaSelect = {props.listaSelect} 
+                	cursos = {props.cursos} 
                 	handleInput = {props.handleInput}
                 	cursosSeleccionados = {props.cursosSeleccionados}
                     handleGenerar = {props.handleGenerar}
+                  changeToPredef = {props.changeToPredef}
+                  chageToCreated = {props.chageToCreated}
+                 handleSubmit = {props.handleSubmit}
+                  cursosCreados = {props.cursosCreados}
                  />
  			           
                 <SelectionPanel

@@ -3,3 +3,6 @@ export const ADD_CURSO = 'ADD_CURSO';
 export const DELETE_CURSO = 'DELETE_CURSO';
 export const ADD_OPCIONES = 'ADD_OPCIONES';
 export const RESET_OPCIONES = 'RESET_OPCIONES';
+export const UPDATE_CREATED = 'UPDATE_CREATED';
+export const CHANGE_TO_CRATED = 'CHANGE_TO_CRATED';
+export const CHANGE_TO_PREDEF = 'CHANGE_TO_PREDEF';

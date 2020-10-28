@@ -1,19 +1,70 @@
 import * as ActionTypes from './ActionTypes';
 //import {CURSOS} from '../shared/javas';
+import Dictionary from '../resources/Diccionario';
 import {CURSOS} from '../shared/repar'
-
-export const Cursos = (state = { 
-	cursos: CURSOS.sort(function(a,b){
-            if(a.Nombre > b.Nombre){
-                return 1;
-            }else if(a.Nombre < b.Nombre){
-                return -1;
+const allc = new Dictionary();
+console.log(CURSOS.values())
+allc.set("CQ132",{
+        "Codigo": "CQ132",
+        "Nombre": "Química Ciencia y tecnología",
+        "Secciones": [
+            {
+                "Seccion": "A",
+                "Horas": [
+                    {
+                        "Dia": 3,
+                        "Hora": 18,
+                        "Prioridad": 1
+                    },
+                    {
+                        "Dia": 3,
+                        "Hora": 19,
+                        "Prioridad": 1
+                    }
+                ]
             }
-            return 0;
-            
-        }),
+        ]
+    })
+allc.set("221",{"Codigo":"221","Nombre":"Holas"})
+export const Cursos = (state = { 
+	  cursos: CURSOS,
     cursosSeleccionados: [],
-    opcionesHorarios: []
+    opcionesHorarios: [],
+    cursosCreados: allc /*[
+                    {                                                                                                                   
+                     "Codigo" : "BIC01",                                                                                             
+                     "Nombre" : "INTRODUCCIÓN A LA COMPUTACIÓN",                                                                     
+                     "Secciones":                                                                                                    
+                       [                                                                                                           
+                         {                                                                                                       
+                             "Seccion": "A",                                                                                     
+                             "Horas":                                                                                            
+                                 [                                                                                               
+                                     "SA 8-9 T",                                                                                 
+                                     "SA 9-11 P"                                                                                 
+                                ]                                                                                               
+                         },                                                                                                      
+                         {                                                                                                       
+                           "Seccion": "B",                                                                                     
+                           "Horas":                                                                                            
+                               [                                                                                               
+                                   "SA 11-12 T",                                                                               
+                                   "SA 12-14 P"                                                                                
+                               ]                                                                                               
+                       },                                                                                                      
+                       {                                                                                                       
+                           "Seccion": "C",                                                                                     
+                           "Horas":                                                                                            
+                               [                                                                                               
+                                   "SA 15-16 T",                                                                               
+                                   "SA 16-18 P"                                                                                
+                               ]                                                                                               
+                       }                                                                                                       
+                                                                                                                               
+                                                                                                                               
+                   ]                                                                                                           
+           }
+    ]*/
     },
     action) => {
     switch (action.type) {
@@ -37,6 +88,14 @@ export const Cursos = (state = {
         case ActionTypes.RESET_OPCIONES:
             return {...state,opcionesHorarios: []}
 
+        case ActionTypes.UPDATE_CREATED:
+            return {...state,cursosCreados: action.payload}
+
+        case ActionTypes.CHANGE_TO_CRATED:
+            return {...state, cursos: state.cursosCreados}
+
+        case ActionTypes.CHANGE_TO_PREDEF:
+            return {...state, cursos: CURSOS}                                                                                                            
         default:
             return state;
     }
