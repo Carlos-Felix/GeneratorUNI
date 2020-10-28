@@ -1,5 +1,6 @@
 import * as ActionTypes from './ActionTypes';
-import {CURSOS} from '../shared/cursos';
+//import {CURSOS} from '../shared/javas';
+import {CURSOS} from '../shared/repar'
 
 export const Cursos = (state = { 
 	cursos: CURSOS.sort(function(a,b){

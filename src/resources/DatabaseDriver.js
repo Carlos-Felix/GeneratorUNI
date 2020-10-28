@@ -1,6 +1,7 @@
 import GeneradorHorarios from './generador'
 //import dataFC from '../data/database.json';
-import {CURSOS} from '../shared/cursos'
+//import {CURSOS} from '../shared/cursos'
+import {CURSOS} from '../shared/repar'
 //import dataFIM from '../data/dbFIM.json'
 
 class DatabaseDriver{
@@ -84,7 +85,7 @@ class DatabaseDriver{
 
     findbyNombreInDatabase = (objJson)=>{
         for(let i in this.database){
-            if(this.database[i].Nombre === objJson.Nombre){
+            if(this.database[i].Codigo === objJson.Codigo){
                 return this.database[i];
             }
         }

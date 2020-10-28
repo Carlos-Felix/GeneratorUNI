@@ -47,36 +47,6 @@ export const CURSOS =
                             {"Dia": 5,"Hora":11,"Prioridad":2}
                             
                         ]
-                },
-                {   
-                    "Seccion": "D",
-                    "Horas":
-                        [
-                            {"Dia": 2,"Hora":10,"Prioridad":1},
-                            {"Dia": 2,"Hora":11,"Prioridad":1},
-                            {"Dia": 5,"Hora":10,"Prioridad":1},
-                            {"Dia": 5,"Hora":11,"Prioridad":1},
-                            {"Dia": 5,"Hora":8,"Prioridad":2},
-                            {"Dia": 5,"Hora":9,"Prioridad":2},
-                            {"Dia": 4,"Hora":10,"Prioridad":2},
-                            {"Dia": 4,"Hora":11,"Prioridad":2}
-                            
-                        ]
-                },
-                {   
-                    "Seccion": "E",
-                    "Horas":
-                        [
-                            {"Dia": 1,"Hora":14,"Prioridad":1},
-                            {"Dia": 1,"Hora":15,"Prioridad":1},
-                            {"Dia": 3,"Hora":14,"Prioridad":1},
-                            {"Dia": 3,"Hora":15,"Prioridad":1},
-                            {"Dia": 5,"Hora":8,"Prioridad":2},
-                            {"Dia": 5,"Hora":9,"Prioridad":2},
-                            {"Dia": 5,"Hora":16,"Prioridad":2},
-                            {"Dia": 5,"Hora":17,"Prioridad":2}
-                            
-                        ]
                 }
     
             ]
@@ -131,6 +101,22 @@ export const CURSOS =
                             {"Dia": 5,"Hora":10,"Prioridad":2},
                             {"Dia": 5,"Hora":11,"Prioridad":2},
                             {"Dia": 5,"Hora":12,"Prioridad":2}
+                            
+                        ]
+                },
+                {   
+                    "Seccion": "D",
+                    "Horas":
+                        [
+                            {"Dia": 2,"Hora":10,"Prioridad":1},
+                            {"Dia": 2,"Hora":11,"Prioridad":1},
+                            {"Dia": 5,"Hora":10,"Prioridad":1},
+                            {"Dia": 5,"Hora":11,"Prioridad":1},
+                            {"Dia": 5,"Hora":8,"Prioridad":2},
+                            {"Dia": 5,"Hora":9,"Prioridad":2},
+                            {"Dia": 4,"Hora":10,"Prioridad":2},
+                            {"Dia": 4,"Hora":11,"Prioridad":2},
+                            {"Dia": 4,"Hora":12,"Prioridad":2}
                             
                         ]
                 }
@@ -293,38 +279,13 @@ export const CURSOS =
                             {"Dia": 5,"Hora": 9, "Prioridad": 1},
                             {"Dia": 2,"Hora": 14, "Prioridad": 2},
                             {"Dia": 2,"Hora": 15, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 17, "Prioridad": 2}
-                        ]
-                }
-    
-            ]
-    },
-    
-    {   
-        "Codigo" : "CF302",
-        "Nombre" : "Mecánica Cuántica I",
-        "Secciones":
-            [  
-                {   
-                    "Seccion": "A",
-                    "Horas":
-                        [   
-                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 15, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 17, "Prioridad": 2}
+                            {"Dia": 2,"Hora": 16, "Prioridad": 2}
                             
                         ]
                 }
     
             ]
     },
-
     {   
         "Codigo" : "CF3F2",
         "Nombre" : "Mecánica Cuántica",
@@ -338,16 +299,41 @@ export const CURSOS =
                             {"Dia": 2,"Hora": 11, "Prioridad": 1},
                             {"Dia": 4,"Hora": 10, "Prioridad": 1},
                             {"Dia": 4,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 3,"Hora": 14, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 15, "Prioridad": 2},
                             {"Dia": 3,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 17, "Prioridad": 2}
+                            {"Dia": 3,"Hora": 17, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 19, "Prioridad": 2}
                             
                         ]
                 }
     
             ]
     },
+    
+    {   
+        "Codigo" : "CF302",
+        "Nombre" : "Mecánica Cuántica",
+        "Secciones":
+            [  
+                {   
+                    "Seccion": "A",
+                    "Horas":
+                        [   
+                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 4,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 16, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 17, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 18, "Prioridad": 2},
+                            {"Dia": 3,"Hora": 19, "Prioridad": 2}
+                            
+                        ]
+                }
+    
+            ]
+    },
+
     
     {   
         "Codigo" : "CF3F1",
@@ -366,8 +352,7 @@ export const CURSOS =
                             {"Dia": 5,"Hora": 9, "Prioridad": 1},
                             {"Dia": 2,"Hora": 14, "Prioridad": 2},
                             {"Dia": 2,"Hora": 15, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 17, "Prioridad": 2}
+                            {"Dia": 2,"Hora": 16, "Prioridad": 2}
                         ]
                 }
     
@@ -429,9 +414,9 @@ export const CURSOS =
                     "Horas":
                         [   
                             {"Dia": 2,"Hora": 8, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 9, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 11, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 11, "Prioridad": 1},
                             {"Dia": 4,"Hora": 8, "Prioridad": 2},
                             {"Dia": 4,"Hora": 9, "Prioridad": 2},
                             {"Dia": 4,"Hora": 10, "Prioridad": 2},
@@ -443,9 +428,9 @@ export const CURSOS =
                     "Horas":
                         [   
                             {"Dia": 2,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 15, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 2,"Hora": 17, "Prioridad": 2},
+                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 16, "Prioridad": 1},
+                            {"Dia": 2,"Hora": 17, "Prioridad": 1},
                             {"Dia": 5,"Hora": 14, "Prioridad": 2},
                             {"Dia": 5,"Hora": 15, "Prioridad": 2},
                             {"Dia": 5,"Hora": 16, "Prioridad": 2},
@@ -474,8 +459,7 @@ export const CURSOS =
                             {"Dia": 5,"Hora": 11, "Prioridad": 1},
                             {"Dia": 4,"Hora": 14, "Prioridad": 2},
                             {"Dia": 4,"Hora": 15, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 16, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 17, "Prioridad": 2}
+                            {"Dia": 4,"Hora": 16, "Prioridad": 2}
                         ]
                 }
     
@@ -537,7 +521,7 @@ export const CURSOS =
     
     
     {   
-        "Codigo" : "CF421",
+        "Codigo" : "CF4E1",
         "Nombre" : "Laboratorio de Física Intermedia",
         "Secciones":
             [  
@@ -574,7 +558,7 @@ export const CURSOS =
     },
     
     {   
-        "Codigo" : "CF451",
+        "Codigo" : "CF4F3",
         "Nombre" : "Mecánica Cuántica II",
         "Secciones":
             [  
@@ -597,7 +581,7 @@ export const CURSOS =
     },
     
     {   
-        "Codigo" : "CF482",
+        "Codigo" : "CF4F2",
         "Nombre" : "Física Atómica y Molecular",
         "Secciones":
             [  
@@ -617,33 +601,31 @@ export const CURSOS =
     
             ]
     },
-    
-    
+        
     {   
-        "Codigo" : "CF492",
-        "Nombre" : "Laboratorio de Física Avanzada",
+        "Codigo" : "CF057",
+        "Nombre" : "Tópicos de Óptica",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 9, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 1,"Hora": 11, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 9, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 3,"Hora": 11, "Prioridad": 2}
+                            {"Dia": 1,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 9, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 10, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 11, "Prioridad": 1}
                         ]
                 }
     
             ]
-    },
-    
+    },    
     {   
-        "Codigo" : "CF531",
+        "Codigo" : "CF5F1",
         "Nombre" : "Física del Estado Sólido I",
         "Secciones":
             [  
@@ -666,8 +648,8 @@ export const CURSOS =
     },
     
     {   
-        "Codigo" : "CF561",
-        "Nombre" : "Física Nuclear I",
+        "Codigo" : "CF5F3",
+        "Nombre" : "Física Nuclear y de Partículas",
         "Secciones":
             [  
                 {   
@@ -678,6 +660,8 @@ export const CURSOS =
                             {"Dia": 2,"Hora": 17, "Prioridad": 1},
                             {"Dia": 4,"Hora": 16, "Prioridad": 1},
                             {"Dia": 4,"Hora": 17, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 16, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 17, "Prioridad": 1},
                             {"Dia": 1,"Hora": 18, "Prioridad": 2},
                             {"Dia": 1,"Hora": 19, "Prioridad": 2},
                             {"Dia": 1,"Hora": 20, "Prioridad": 2}
@@ -686,10 +670,9 @@ export const CURSOS =
     
             ]
     },
-    
     {   
-        "Codigo" : "CF076",
-        "Nombre" : "Introducción a la Electrodinámica Cuántica",
+        "Codigo" : "CF077",
+        "Nombre" : "Introducción a la Teoría Electrodebil",
         "Secciones":
             [  
                 {   
@@ -711,29 +694,27 @@ export const CURSOS =
             ]
     },
     {   
-        "Codigo" : "CF004",
-        "Nombre" : "Tópicos Especiales IV",
+        "Codigo" : "CF046",
+        "Nombre" : "Introducción a la Astronomía",
         "Secciones":
             [  
                 {   
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 11, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 14, "Prioridad": 1},
-                            {"Dia": 2,"Hora": 15, "Prioridad": 1},
-                            {"Dia": 4,"Hora": 8, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 9, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 10, "Prioridad": 2},
-                            {"Dia": 4,"Hora": 11, "Prioridad": 2}
+                            {"Dia": 3,"Hora": 12, "Prioridad": 1},
+                            {"Dia": 3,"Hora": 13, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 12, "Prioridad": 1},
+                            {"Dia": 5,"Hora": 13, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 11, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 12, "Prioridad": 2},
+                            {"Dia": 1,"Hora": 13, "Prioridad": 2}
     
                         ]
                 }
     
             ]
     },
-    
     {   
         "Codigo" : "CF018",
         "Nombre" : "Introducción a la Astronomía",
@@ -758,7 +739,7 @@ export const CURSOS =
     },
     
     {   
-        "Codigo" : "CF028",
+        "Codigo" : "CF049",
         "Nombre" : "Electromagnetismo II",
         "Secciones":
             [  
@@ -766,8 +747,8 @@ export const CURSOS =
                     "Seccion": "A",
                     "Horas":
                         [   
-                            {"Dia": 1,"Hora": 10, "Prioridad": 1},
-                            {"Dia": 1,"Hora": 11, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 8, "Prioridad": 1},
+                            {"Dia": 1,"Hora": 9, "Prioridad": 1},
                             {"Dia": 3,"Hora": 14, "Prioridad": 1},
                             {"Dia": 3,"Hora": 15, "Prioridad": 1},
                             {"Dia": 4,"Hora": 14, "Prioridad": 2},
@@ -779,9 +760,8 @@ export const CURSOS =
     
             ]
     },
-    
     {   
-        "Codigo" : "CF034",
+        "Codigo" : "CF060",
         "Nombre" : "Métodos Numéricos",
         "Secciones":
             [  
@@ -800,8 +780,9 @@ export const CURSOS =
     
             ]
     },
+    
     {   
-        "Codigo" : "CF060",
+        "Codigo" : "CF034",
         "Nombre" : "Métodos Numéricos",
         "Secciones":
             [  

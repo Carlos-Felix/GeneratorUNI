@@ -14,7 +14,8 @@ export const ConfigureStore = () => {
 import {/*applyMiddleware, */createStore, combineReducers } from 'redux';
 //import logger from 'redux-logger';
 import {Cursos} from './cursos'
-
+import { persistStore, persistCombineReducers } from 'redux-persist'
+import storage from 'redux-persist/es/storage';                  
 
 export const ConfigureStore = () => {
     const store = createStore(

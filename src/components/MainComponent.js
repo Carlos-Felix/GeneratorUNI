@@ -50,7 +50,7 @@ class Main extends Component{
       this.props.cursos.map((curso,index)=>{
         //console.log(d.Nombre)
         
-        options.push({value :curso.Nombre, label : curso.Codigo + ' - ' + curso.Nombre})
+        options.push({value :curso.Codigo, label : curso.Codigo + ' - ' + curso.Nombre})
       })
       return options;
     }
@@ -58,7 +58,7 @@ class Main extends Component{
 
     handleInput = (e)=>{
 
-        this.props.agregarCurso(this.DatabaseDriver.findbyNombreInDatabase({Nombre: e.value}))
+        this.props.agregarCurso(this.DatabaseDriver.findbyNombreInDatabase({Codigo: e.value}))
 
         //const a = GeneradorHorarios(this.props.cursosSeleccionados)
         //this.props.agregarOpciones(a)
