@@ -6,3 +6,4 @@ export const RESET_OPCIONES = 'RESET_OPCIONES';
 export const UPDATE_CREATED = 'UPDATE_CREATED';
 export const CHANGE_TO_CRATED = 'CHANGE_TO_CRATED';
 export const CHANGE_TO_PREDEF = 'CHANGE_TO_PREDEF';
+export const SET_CURSOS  = 'SET_CURSOS';

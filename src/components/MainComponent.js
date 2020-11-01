@@ -8,6 +8,7 @@ import {addCurso,addOpcionesHorario,resetOpcionesHorario,deleteCurso, changeToPr
 import { connect } from 'react-redux';
 
 import DatabaseDriver from '../resources/DatabaseDriver'
+import {CURSOS} from '../shared/repar'; 
 
 import GeneradorHorarios from '../resources/generador';
 
@@ -26,10 +27,10 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = state => {
   return {
-    cursos: state.cursos.cursos,
-    cursosSeleccionados: state.cursos.cursosSeleccionados,
-    opcionesHorarios: state.cursos.opcionesHorarios,
-    cursosCreados: state.cursos.cursosCreados
+    cursos: state.cursosCreados.cursos,
+    cursosSeleccionados: state.cursosCreados.cursosSeleccionados,
+    opcionesHorarios: state.cursosCreados.opcionesHorarios,
+    cursosCreados: state.cursosCreados.cursosCreados
   }
 }
 

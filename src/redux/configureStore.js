@@ -13,7 +13,8 @@ export const ConfigureStore = () => {
 */
 import {/*applyMiddleware, */createStore, combineReducers } from 'redux';
 //import logger from 'redux-logger';
-import {Cursos} from './cursos'
+import { CursosCreados } from './cursosCreados'
+import { Cursos } from './cursos';
 import { persistReducer, persistStore } from 'redux-persist'
 import storage from 'redux-persist/es/storage';                  
 
@@ -23,7 +24,7 @@ const config = {
   whitelist: ['cursos']
 }
 const rootReducer = combineReducers({
-  cursos: Cursos
+  cursosCreados: CursosCreados
 })
 /*
 export const ConfigureStore = () => {

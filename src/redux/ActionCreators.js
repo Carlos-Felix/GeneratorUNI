@@ -41,5 +41,8 @@ export const changeToPredef = () => ({
   type: ActionTypes.CHANGE_TO_PREDEF
 })
 
-
+export const setCursos = (dict) => ({
+  type: ActionTypes.SET_CURSOS,
+  payload: dict
+})
 
